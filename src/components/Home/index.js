@@ -5,6 +5,11 @@ import './styles.scss';
 
 // import HomeNavButton from './HomeNavButton';
 
+// Social Images
+import github_logo from '../../img/social/github.png';
+import linkedin_logo from '../../img/social/linkedin.png';
+import twitter_logo from '../../img/social/twitter.png';
+
 // There is probably a cleaner way of doing this, but Webpack specifically is for staticlly choosing the files you want to use... so this solution will do for now :)
 import face0 from '../../img/faces/face-0.png';
 import face1 from '../../img/faces/face-1.png';
@@ -85,21 +90,27 @@ class Home extends React.Component {
                             href="https://github.com/RileyAbr"
                             target="_blank"
                             rel="noopener noreferrer"
-                        >GitHub</a>
+                        >
+                            <img className="home-nav-icon" src={github_logo} alt="GitHub's Logo"></img>
+                        </a>
                     </div>
                     <div className="home-nav-wrapper">
                         <a className="home-nav-button"
                             href="https://www.linkedin.com/in/rlyabr/"
                             target="_blank"
                             rel="noopener noreferrer"
-                        >LinkedIn</a>
+                        >
+                            <img className="home-nav-icon" src={linkedin_logo} alt="LinkedIn's Logo"></img>
+                        </a>
                     </div>
                     <div className="home-nav-wrapper">
                         <a className="home-nav-button"
                             href="https://twitter.com/RileyAbrahamson"
                             target="_blank"
                             rel="noopener noreferrer"
-                        >Twitter</a>
+                        >
+                            <img className="home-nav-icon" src={twitter_logo} alt="Twitter's Logo"></img>
+                        </a>
                     </div>
                 </div >
             </div>
