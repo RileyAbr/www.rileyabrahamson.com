@@ -1,0 +1,132 @@
+@import "./reset";
+@import "./color";
+@import "./typography";
+
+$texture-triangles: url("../img/tritexture.png");
+$roundness-softsquare: 8px;
+$roundness-oval: 20px;
+
+@mixin f-header {
+    font-family: "Dosis", sans-serif;
+    font-weight: 300;
+    color: $c-primary-font;
+}
+@mixin f-body {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    color: $c-primary-font;
+}
+
+@mixin back-triangles {
+    background-color: $c-primary-background;
+    background-image: $texture-triangles;
+}
+
+//
+//
+// FORBIDDEN ZONE BELOW
+//
+//
+
+// SCSS size variables
+$media-sizes: 576px 765px 992px 1200px;
+
+// Div variables
+$blockRoundness: 4px;
+
+$blockColorWhite: #f4f4f4;
+$blockColorBlack: #333;
+$blockColorPurple: #b539d8;
+
+$formBackgroundColor: #e6e6e6;
+
+@mixin divisionLine {
+    background: $fontColorBlack;
+    border-radius: 10px;
+}
+
+@mixin divisionLineHort {
+    @include divisionLine();
+    width: 4px;
+    height: auto;
+}
+@mixin divisionLineVert {
+    @include divisionLine();
+    width: auto;
+    height: 4px;
+}
+
+@mixin softBorders {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0.25rem;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+@mixin hardBorders {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0.25rem;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+@mixin lightShadowBorder {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+$fontColorWhite: #e8f5f6;
+$fontColorPurple: $blockColorPurple;
+
+// Input Variables
+@mixin purpleButton {
+    background-color: $blockColorPurple;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 9px 20px;
+    @include bodyFont;
+    color: $fontColorWhite;
+    @include opacityTransition();
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include hoverOpacityTransition;
+    }
+}
+
+@mixin underlineLink {
+    color: $fontColorPurple;
+    text-decoration: underline;
+}
+
+//Hover transitions variables
+$cubeBezier: cubic-bezier(0.59, 0.17, 0.3, 0.75);
+$standardTransitionDuration: 0.4s;
+
+@mixin opacityTransition {
+    opacity: 1;
+    transition: opacity $standardTransitionDuration $cubeBezier;
+}
+
+@mixin hoverOpacityTransition {
+    opacity: 0.7;
+    transition: opacity $standardTransitionDuration $cubeBezier;
+}
+
+@mixin borderTransition {
+    transition: border-color $standardTransitionDuration $cubeBezier;
+}
+
+@mixin fontColorTransition {
+    transition: color $standardTransitionDuration $cubeBezier;
+}

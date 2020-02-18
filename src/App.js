@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+    Route,
+    HashRouter
+} from 'react-router-dom';
+
+// Overarching Page Styles
+import './App.scss';
+
+// Navigation Bar
+import NavHeader from './components/NavHeader';
+
+// 1st Level Pages on Site
+import Home from './components/Home';
+import About from './components/About';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+
+// RA Logo Import
+import logo from './logo/ra_logo.png';
+import logoSelected from './logo/ra_logo_select.png';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <HashRouter>
+            <NavHeader></NavHeader>
+
+            <main>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/resume" component={Resume} />
+                <Route path="/portfolio" component={Portfolio} />
+            </main>
+        </HashRouter>
+    );
 }
 
 export default App;

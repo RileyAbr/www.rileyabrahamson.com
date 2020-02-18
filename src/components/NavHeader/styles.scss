@@ -1,0 +1,52 @@
+@import "../../scss/variables";
+
+// General Navbar Styles
+header {
+    @include f-header;
+    width: 100%;
+    padding: 3px 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.floating {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    border-bottom: 4px solid #b539d8;
+    background-color: #f2f3f2;
+    background-image: url("../../img/tritexture.png");
+    box-shadow: 0 14px 28px rgba(51, 30, 57, 0.25), 0 10px 10px rgba(51, 30, 57, 0.22);
+}
+
+// Logo and Title Name
+.logo-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-masthead {
+    font-size: 2em;
+    color: $c-primary-font;
+}
+
+// Navigation Buttons
+ul {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+ul > li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.active {
+    color: $c-purple-font;
+}

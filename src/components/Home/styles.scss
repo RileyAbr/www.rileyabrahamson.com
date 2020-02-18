@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+
+.home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-nav-grid {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-nav-button {
+    display: block;
+    height: 125px;
+    width: 125px;
+    border: 3px solid black;
+    border-radius: $roundness-softsquare;
+}
