@@ -32,10 +32,12 @@ const faces = [
 function HomeNavButton(props) {
 
     return (
-        <NavLink className="home-nav-button"
-            to={"/" + props.value}
-            onMouseOver={props.onMouseOver}
-        >{props.value}</NavLink>
+        <div className="home-nav-wrapper">
+            <NavLink className="home-nav-button"
+                to={"/" + props.value}
+                onMouseOver={props.onMouseOver}
+            >{props.value}</NavLink>
+        </div>
     )
 }
 
@@ -51,7 +53,6 @@ class Home extends React.Component {
         return (
             <HomeNavButton
                 value={toPage}
-
             ></HomeNavButton>
         )
     }
@@ -64,33 +65,43 @@ class Home extends React.Component {
         return (
             <div className="home-nav">
                 <div className="home-nav-grid">
+                    {/* First row */}
                     {this.renderHomeNavButton("about")}
                     {this.renderHomeNavButton("resume")}
                     {this.renderHomeNavButton("portfolio")}
 
+                    {/* Second Row */}
                     {this.renderHomeNavButton("blog")}
-                    <div className="home-nav-button">
-                        <img id="home-rileys-face" src={faces[this.state.faceNumber]} alt="An icon of riley's face"></img>
+                    <div className="home-nav-wrapper">
+                        <div className="home-nav-button">
+                            <img id="home-rileys-face" src={faces[this.state.faceNumber]} alt="An icon of riley's face"></img>
+                        </div>
                     </div>
                     {this.renderHomeNavButton("contact")}
 
                     {/* External Social Links! */}
-                    <a className="home-nav-button"
-                        href="https://github.com/RileyAbr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >GitHub</a>
-                    <a className="home-nav-button"
-                        href="https://www.linkedin.com/in/rlyabr/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >LinkedIn</a>
-                    <a className="home-nav-button"
-                        href="https://twitter.com/RileyAbrahamson"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >Twitter</a>
-                </div>
+                    <div className="home-nav-wrapper">
+                        <a className="home-nav-button"
+                            href="https://github.com/RileyAbr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >GitHub</a>
+                    </div>
+                    <div className="home-nav-wrapper">
+                        <a className="home-nav-button"
+                            href="https://www.linkedin.com/in/rlyabr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >LinkedIn</a>
+                    </div>
+                    <div className="home-nav-wrapper">
+                        <a className="home-nav-button"
+                            href="https://twitter.com/RileyAbrahamson"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Twitter</a>
+                    </div>
+                </div >
             </div>
         );
     }

@@ -16,6 +16,12 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.home-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-nav-button {
     display: block;
     height: 125px;
