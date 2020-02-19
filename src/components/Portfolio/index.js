@@ -1,9 +1,25 @@
 import React from 'react';
 
+import './styles.scss';
+
+import PortfolioProject from './PortfolioProject';
+
 function Portfolio() {
     return (
-        <div>
-            This is the Portfolio Page!
+        <div className="page-content">
+            <div className="portfolio-column">
+                <PortfolioProject></PortfolioProject>
+                <PortfolioProject></PortfolioProject>
+                <PortfolioProject></PortfolioProject>
+
+                <PortfolioProject></PortfolioProject>
+                <PortfolioProject></PortfolioProject>
+                <PortfolioProject></PortfolioProject>
+
+                <PortfolioProject></PortfolioProject>
+                <PortfolioProject></PortfolioProject>
+                <PortfolioProject></PortfolioProject>
+            </div>
         </div>
     );
 }

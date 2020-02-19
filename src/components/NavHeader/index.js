@@ -12,7 +12,7 @@ function NavHeader() {
         <header>
             <NavLink exact to="/" className="logo-container">
                 <img src={logoSelected} height="50px" alt="Logo for Riley Abrahamson"></img>
-                <span class="header-masthead">Riley Abrahamson</span>
+                <span className="header-masthead">Riley Abrahamson</span>
             </NavLink>
 
             <nav>

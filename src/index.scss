@@ -8,3 +8,8 @@ body {
     @include back-triangles;
     @include f-body;
 }
+
+// This is the overall DIV container that is present on every page, other than Home
+.page-content {
+    padding-top: 5.5em;
+}
