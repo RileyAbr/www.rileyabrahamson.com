@@ -2,18 +2,20 @@ import React from 'react';
 
 import './styles.scss';
 
-function PortfolioProject() {
+function PortfolioProject(props) {
     return (
-        <div className="overlay-container">
-            <img className="overlay-image align-middle" src={"https://via.placeholder.com/400x250"} />
+        <div className="overlay-container" >
+            <img className="overlay-image align-middle"
+                //src={this.props.mediaPath} 
+                src={process.env.PUBLIC_URL + "portfolio_img/" + props.mediaPath} />
             <div className="overlay-hover">
                 <div className="overlay-description">
                     <p className="overlay-text">
-                        <strong>{"Title"}</strong>
+                        <strong>{props.title}</strong>
                         <br></br>
-                        {"previewLine1"}
+                        {props.previewLine1}
                         <br></br>
-                        {"previewLine2"}
+                        {props.previewLine2}
                     </p>
                 </div>
             </div>
