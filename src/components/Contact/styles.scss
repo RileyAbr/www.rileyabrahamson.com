@@ -1,7 +1,44 @@
+@import "../../scss/variables";
+
 #contact-form {
-    width: 60%;
+    width: 55%;
     margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+    background-color: $c-background-primary;
+    @include border-card;
+}
+
+#contact-title {
+    background-color: $c-background-purple;
+    @include f-header;
+    color: $c-font-secondary;
+    font-size: 2em;
+    border-radius: $roundness-softsquare $roundness-softsquare 0 0;
+    border-bottom: 1px solid $c-border-dark;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.contact-body {
+    border-inline-start: 1px solid $c-border-light;
+    border-inline-end: 1px solid $c-border-light;
+}
+
+.contact-row {
+    margin: 25px 0;
+    &input[type="*"]:hover {
+        @extend %styled-input;
+    }
+}
+
+.contact-submit-row {
+    @include back-triangles;
+    border-radius: 0 0 $roundness-softsquare $roundness-softsquare;
+    border: 1px solid $c-border-light;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-submit-button {
+    @include button-submit-purple;
 }

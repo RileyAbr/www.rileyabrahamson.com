@@ -32,7 +32,7 @@ header {
 
 .header-masthead {
     font-size: 2em;
-    color: $c-primary-font;
+    color: $c-font-primary;
 }
 
 // Navigation Buttons
@@ -48,5 +48,5 @@ ul > li {
 }
 
 .active {
-    color: $c-purple-font;
+    color: $c-font-purple;
 }

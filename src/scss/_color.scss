@@ -4,8 +4,17 @@ $black: #080808;
 $purple: #b539d8;
 
 // Backgrounds
-$c-primary-background: #fffdff;
+$c-background-primary: $white;
+$c-background-purple: $purple;
+
+// Borders
+$c-border-primary: $black;
+$c-border-secondary: $white;
+$c-border-purple: $purple;
+$c-border-dark: rgba(0, 0, 0, 0.2);
+$c-border-light: #dee2e6;
 
 // Fonts
-$c-primary-font: #080808;
-$c-purple-font: #b539d8;
+$c-font-primary: $black;
+$c-font-secondary: $white;
+$c-font-purple: $purple;
