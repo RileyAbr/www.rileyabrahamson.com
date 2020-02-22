@@ -11,7 +11,7 @@
     background-color: $c-background-purple;
     @include f-header;
     color: $c-font-secondary;
-    font-size: 2em;
+    font-size: 2.2em;
     border-radius: $roundness-softsquare $roundness-softsquare 0 0;
     border-bottom: 1px solid $c-border-dark;
     margin: 0;
@@ -25,9 +25,42 @@
 }
 
 .contact-row {
-    margin: 25px 0;
-    &input[type="*"]:hover {
-        @extend %styled-input;
+    margin: 30px 0;
+
+    label {
+        margin-left: 5%;
+    }
+
+    input[type],
+    textarea,
+    select {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        width: 90%;
+        margin: 0 5%;
+        padding: 1%;
+        background: $c-background-primary;
+        border: 1px solid $c-border-dark;
+        border-radius: $roundness-softsquare;
+        color: $c-font-primary;
+        @include f-body;
+        font-size: 1.1em;
+
+        &:hover {
+            @extend %styled-inputs;
+        }
+        &:focus {
+            @extend %styled-inputs;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        font-size: 1.25em;
+        @include f-body;
     }
 }
 
@@ -40,5 +73,5 @@
 }
 
 .contact-submit-button {
-    @include button-submit-purple;
+    @include button-purple;
 }
