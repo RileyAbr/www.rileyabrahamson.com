@@ -8,6 +8,12 @@ $roundness-softsquare: 8px;
 $roundness-oval: 20px;
 $shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.175);
 
+// Screen Sizes
+$size-phone: 576px; // Small screen - phone
+$size-tablet: 765px; // Medium screen - tablet/iPad
+$size-desktop: 992px; // Large screen / desktop
+$size-xldesktop: 1200px; // Extra large screen / wide desktop
+
 /*
  
  ########  #######  ##    ## ########  ######  
@@ -44,6 +50,11 @@ $shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.175);
     background-image: $texture-triangles;
 }
 
+%back-unfocused {
+    opacity: 0.5;
+    background-color: #000;
+}
+
 /*
  
  ########   #######  ########  ########  ######## ########   ######  
@@ -74,6 +85,30 @@ $shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.175);
   ######  ##     ## ##     ## ########  
  
 */
+
+%card-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    @extend %back-unfocused;
+}
+
+%card-wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
 
 %card-header {
     background-color: $c-background-purple;
