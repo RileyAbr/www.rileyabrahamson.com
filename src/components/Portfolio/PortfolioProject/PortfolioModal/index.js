@@ -27,23 +27,33 @@ export default class PortfolioModal extends React.Component {
                     }}>
                     <div class="portfolio-modal">
                         <div class="portfolio-modal-header">
-                            <h4 class="portfolio-modal-title" id="modal-basic-title">Test</h4>
+                            <h4 class="portfolio-modal-title">
+                                {this.props.title}
+                            </h4>
                             <button type="button" class="modal-close close" aria-label="Close">
                                 <span aria-hidden="true" onClick={e => {
                                     this.onClose(e);
-                                }}>&times;</span>
+                                }}>
+                                    &times;
+                                </span>
                             </button>
                         </div>
+
                         <div class="portfolio-modal-body">
                             <p class="modal-desc">{this.props.children}</p>
-                            <img class="portfolio-modal-preview-image" src={""} alt=""></img>
+                            <img class="portfolio-modal-preview-image" src={this.props.modalMediaPath} alt=""></img>
                             {/* <video class="portfolio-modal-preview-clip" src={""} controls muted></video> */}
-                            <p class="portfolio-modal-tech">Technologies used: Test</p>
+                            <p class="portfolio-modal-tech">
+                                Technologies used: {this.props.techUsed}
+                            </p>
                         </div>
+
                         <div class="portfolio-modal-footer">
-                            <a class="portfolio-modal-btn btn-outline-dark" href={""}
+                            <a class="portfolio-modal-btn btn-outline-dark"
+                                href={this.props.externalLink}
                                 target="_blank" rel="noopener noreferrer">Link to Project</a>
-                            <a class="portfolio-modal-btn" href={""}
+                            <a class="portfolio-modal-btn"
+                                href={this.props.repoLink}
                                 target="_blank" rel="noopener noreferrer">Link to GitHub Repo</a>
                         </div>
                     </div>

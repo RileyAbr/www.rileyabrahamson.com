@@ -40,8 +40,19 @@ class PortfolioProject extends React.Component {
                     </div>
                 </div>
 
-                <PortfolioModal onClose={this.showModal} show={this.state.show}>
-                    Test Bodydfadsfasd
+                <PortfolioModal
+                    onClose={this.showModal}
+                    show={this.state.show}
+                    title={this.props.title}
+                    techUsed={this.props.techUsed}
+                    modalMediaPath={this.props.modalMediaPath}
+                    modalMediaIsImage={this.props.modalMediaIsImage}
+                    hasExternalLink={this.props.hasExternalLink}
+                    externalLink={this.props.externalLink}
+                    hasRepo={this.props.hasRepo}
+                    repoLink={this.props.repoLink}
+                >
+                    {this.props.longDesc}
                 </PortfolioModal>
             </div>
         );
