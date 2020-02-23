@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 import './styles.scss'
 
 export default class PortfolioModal extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     onClose = e => {
         this.props.onClose && this.props.onClose(e);
     };
@@ -49,12 +45,22 @@ export default class PortfolioModal extends React.Component {
                         </div>
 
                         <div class="portfolio-modal-footer">
-                            <a class="portfolio-modal-btn btn-outline-dark"
-                                href={this.props.externalLink}
-                                target="_blank" rel="noopener noreferrer">Link to Project</a>
-                            <a class="portfolio-modal-btn"
-                                href={this.props.repoLink}
-                                target="_blank" rel="noopener noreferrer">Link to GitHub Repo</a>
+                            {/* Only renders the external link if one exists */}
+                            {this.props.hasExternalLink &&
+                                <a class="portfolio-modal-btn"
+                                    href={this.props.externalLink}
+                                    target="_blank" rel="noopener noreferrer">
+                                    Link to Project
+                                </a>
+                            }
+                            {/* Only renders the repo link if it exists */}
+                            {this.props.hasRepo &&
+                                <a class="portfolio-modal-btn"
+                                    href={this.props.repoLink}
+                                    target="_blank" rel="noopener noreferrer">
+                                    Link to GitHub Repo
+                                </a>
+                            }
                         </div>
                     </div>
                 </div>

@@ -29,3 +29,7 @@
 .portfolio-modal-footer {
     @extend %card-footer;
 }
+
+.portfolio-modal-btn {
+    @include button-purple;
+}
