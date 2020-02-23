@@ -56,12 +56,12 @@ export default class PortfolioModal extends React.Component {
 
                             {/* Conditional check for whether media in the modal is an image or not */}
                             {this.props.modalMediaIsImage &&
-                                <img class="portfolio-modal-preview-image"
+                                <img class="portfolio-modal-media"
                                     src={this.props.modalMediaPath}
                                     alt=""></img>
                             }
                             {!this.props.modalMediaIsImage &&
-                                <video class="portfolio-modal-preview-clip"
+                                <video class="portfolio-modal-media"
                                     src={this.props.modalMediaPath} controls muted></video>
                             }
 

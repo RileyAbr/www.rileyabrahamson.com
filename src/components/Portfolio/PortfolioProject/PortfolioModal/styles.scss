@@ -22,12 +22,56 @@
     @extend %card-header;
 }
 
+.portfolio-modal-title {
+    @include f-header;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
 .portfolio-modal-body {
     @extend %card-body;
 }
 
+button {
+    white-space: nowrap;
+}
+
+.portfolio-modal-close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 1rem 1rem;
+    margin: -1.5rem -1rem -1.25rem auto;
+    @include f-header;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
 .portfolio-modal-footer {
     @extend %card-footer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.portfolio-modal-desc {
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-modal-media {
+    max-width: 100%;
+    @include border-shadow-soft;
+    display: block;
+    margin: 0 auto;
+}
+.portfolio-modal-tech {
+    margin-top: 0.5rem;
 }
 
 .portfolio-modal-btn {

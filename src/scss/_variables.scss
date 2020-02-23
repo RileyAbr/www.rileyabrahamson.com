@@ -72,6 +72,7 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
 
 @mixin border-shadow-soft {
     box-shadow: $shadow-soft;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -122,6 +123,7 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
     background-color: $c-background-primary;
     border-inline-start: 1px solid $c-border-light;
     border-inline-end: 1px solid $c-border-light;
+    padding: 1rem;
 }
 
 %card-footer {
@@ -143,7 +145,8 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
 */
 @mixin button-purple {
     border-radius: $roundness-oval $roundness-oval $roundness-oval $roundness-oval;
-    padding: 0.5em 1.25em;
+    padding: 0.4em 1.2em;
+    margin: 0.25rem;
     background-color: $c-background-purple;
     color: $c-font-secondary;
     font-size: 1.1em;
