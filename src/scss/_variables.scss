@@ -84,6 +84,7 @@ $shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
 %card-body {
+    background-color: $c-background-primary;
     border-inline-start: 1px solid $c-border-light;
     border-inline-end: 1px solid $c-border-light;
 }

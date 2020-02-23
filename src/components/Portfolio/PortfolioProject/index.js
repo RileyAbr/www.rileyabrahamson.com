@@ -21,14 +21,14 @@ class PortfolioProject extends React.Component {
     render() {
         return (
             <div>
-                <div className="overlay-container" onClick={e => {
-                    this.showModal(e);
-                }}>
+                <div className="overlay-container">
                     <img className="overlay-image align-middle"
                         //src={this.props.mediaPath} 
                         src={process.env.PUBLIC_URL + "portfolio_img/" + this.props.mediaPath} />
                     <div className="overlay-hover">
-                        <div className="overlay-description">
+                        <div className="overlay-description" onClick={e => {
+                            this.showModal(e);
+                        }}>
                             <p className="overlay-text">
                                 <strong>{this.props.title}</strong>
                                 <br></br>
@@ -40,7 +40,7 @@ class PortfolioProject extends React.Component {
                     </div>
                 </div>
 
-                <PortfolioModal onClose={this.showModal} show={false}>
+                <PortfolioModal onClose={this.showModal} show={this.state.show}>
                     Test Bodydfadsfasd
                 </PortfolioModal>
             </div>
