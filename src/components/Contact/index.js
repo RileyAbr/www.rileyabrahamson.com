@@ -15,7 +15,8 @@ function Contact() {
                         <input id='input-name'
                             name='name'
                             type='text'
-                            placeholder="Your Name" />
+                            placeholder="Your Name"
+                        />
                     </div>
 
                     <div class='contact-row'>
@@ -23,7 +24,8 @@ function Contact() {
                         <input id='input-email'
                             name='email'
                             type='email'
-                            placeholder="name@website.com" />
+                            placeholder="name@website.com"
+                        />
                     </div>
 
                     <div class='contact-row'>

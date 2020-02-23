@@ -2,10 +2,23 @@
 @import "./color";
 @import "./typography";
 
+// General Variables
 $texture-triangles: url(../img/tritexture.png);
 $roundness-softsquare: 8px;
 $roundness-oval: 20px;
+$shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.175);
 
+/*
+ 
+ ########  #######  ##    ## ########  ######  
+ ##       ##     ## ###   ##    ##    ##    ## 
+ ##       ##     ## ####  ##    ##    ##       
+ ######   ##     ## ## ## ##    ##     ######  
+ ##       ##     ## ##  ####    ##          ## 
+ ##       ##     ## ##   ###    ##    ##    ## 
+ ##        #######  ##    ##    ##     ######  
+ 
+*/
 @mixin f-header {
     font-family: "Dosis", sans-serif;
     font-weight: 300;
@@ -15,15 +28,83 @@ $roundness-oval: 20px;
     font-weight: 400;
 }
 
+/*
+ 
+ ########     ###     ######  ##    ## 
+ ##     ##   ## ##   ##    ## ##   ##  
+ ##     ##  ##   ##  ##       ##  ##   
+ ########  ##     ## ##       #####    
+ ##     ## ######### ##       ##  ##   
+ ##     ## ##     ## ##    ## ##   ##  
+ ########  ##     ##  ######  ##    ## 
+ 
+*/
 @mixin back-triangles {
     background-color: $c-background-primary;
     background-image: $texture-triangles;
 }
 
+/*
+ 
+ ########   #######  ########  ########  ######## ########   ######  
+ ##     ## ##     ## ##     ## ##     ## ##       ##     ## ##    ## 
+ ##     ## ##     ## ##     ## ##     ## ##       ##     ## ##       
+ ########  ##     ## ########  ##     ## ######   ########   ######  
+ ##     ## ##     ## ##   ##   ##     ## ##       ##   ##         ## 
+ ##     ## ##     ## ##    ##  ##     ## ##       ##    ##  ##    ## 
+ ########   #######  ##     ## ########  ######## ##     ##  ######  
+ 
+*/
 @mixin border-card {
     border-radius: $roundness-softsquare $roundness-softsquare $roundness-softsquare $roundness-softsquare;
 }
 
+@mixin border-shadow-soft {
+    box-shadow: $shadow-soft;
+}
+
+/*
+ 
+  ######     ###    ########  ########  
+ ##    ##   ## ##   ##     ## ##     ## 
+ ##        ##   ##  ##     ## ##     ## 
+ ##       ##     ## ########  ##     ## 
+ ##       ######### ##   ##   ##     ## 
+ ##    ## ##     ## ##    ##  ##     ## 
+  ######  ##     ## ##     ## ########  
+ 
+*/
+
+%card-header {
+    background-color: $c-background-purple;
+    @include f-header;
+    color: $c-font-secondary;
+    border-radius: $roundness-softsquare $roundness-softsquare 0 0;
+    border-bottom: 1px solid $c-border-dark;
+}
+
+%card-body {
+    border-inline-start: 1px solid $c-border-light;
+    border-inline-end: 1px solid $c-border-light;
+}
+
+%card-footer {
+    @include back-triangles;
+    border-radius: 0 0 $roundness-softsquare $roundness-softsquare;
+    border: 1px solid $c-border-light;
+}
+
+/*
+ 
+ #### ##    ## ########  ##     ## ########  ######  
+  ##  ###   ## ##     ## ##     ##    ##    ##    ## 
+  ##  ####  ## ##     ## ##     ##    ##    ##       
+  ##  ## ## ## ########  ##     ##    ##     ######  
+  ##  ##  #### ##        ##     ##    ##          ## 
+  ##  ##   ### ##        ##     ##    ##    ##    ## 
+ #### ##    ## ##         #######     ##     ######  
+ 
+*/
 @mixin button-purple {
     border-radius: $roundness-oval $roundness-oval $roundness-oval $roundness-oval;
     padding: 0.5em 1.25em;
@@ -33,60 +114,15 @@ $roundness-oval: 20px;
 
     // Accessiblity focus
     &:focus {
-        // outline: 2px dotted $c-border-purple;
-        // outline-offset: 3px;
+        outline: 2px dotted $c-border-purple;
+        outline-offset: 2px;
     }
-    &::moz-focus-innner {
+    &::-moz-focus-inner {
         border: 0;
     }
 
     &:hover {
         background-color: darken($color: $c-background-purple, $amount: 4);
-    }
-}
-
-.styled-inputs {
-    input[type="text"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="time"],
-    input[type="url"],
-    textarea,
-    select {
-        transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition-property: box-shadow, padding, border;
-        outline: none;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        width: 80%;
-        margin: 0 10%;
-        background: $c-background-primary;
-        border: 1px solid #ccc;
-        padding: 1%;
-        color: $c-font-primary;
-    }
-
-    input[type="text"]:focus,
-    input[type="date"]:focus,
-    input[type="datetime"]:focus,
-    input[type="email"]:focus,
-    input[type="number"]:focus,
-    input[type="search"]:focus,
-    input[type="time"]:focus,
-    input[type="url"]:focus,
-    textarea:focus,
-    select:focus {
-        box-shadow: 0 0 2px $c-border-purple;
-        padding: 1%;
-        border: 1px solid $c-border-purple;
     }
 }
 
@@ -96,10 +132,28 @@ $roundness-oval: 20px;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    transition-property: box-shadow, padding, border;
+    width: 90%;
+    margin: 0 5%;
+    padding: 1%;
+    background: $c-background-primary;
+    border: 1px solid $c-border-dark;
+    border-radius: $roundness-softsquare;
+    color: $c-font-primary;
+    @include f-body;
+    font-size: 1.1em;
 
-    &:hover {
+    &:hover,
+    &:focus {
         border: 1px solid $c-border-purple;
+        box-shadow: 0 0 2px $c-border-purple;
+    }
+
+    &:invalid,
+    &:required,
+    &:-moz-ui-invalid,
+    &:-moz-submit-invalid {
+        border: 1px solid $c-border-warning;
+        box-shadow: 0 0 2px $c-border-warning;
     }
 }
 

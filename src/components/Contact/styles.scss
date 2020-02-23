@@ -2,26 +2,23 @@
 
 #contact-form {
     width: 55%;
+    min-width: 330px;
     margin: 0 auto;
     background-color: $c-background-primary;
     @include border-card;
+    @include border-shadow-soft;
 }
 
 #contact-title {
-    background-color: $c-background-purple;
-    @include f-header;
-    color: $c-font-secondary;
+    @extend %card-header;
     font-size: 2.2em;
-    border-radius: $roundness-softsquare $roundness-softsquare 0 0;
-    border-bottom: 1px solid $c-border-dark;
     margin: 0;
     padding: 5px 0;
     text-align: center;
 }
 
 .contact-body {
-    border-inline-start: 1px solid $c-border-light;
-    border-inline-end: 1px solid $c-border-light;
+    @extend %card-body;
 }
 
 .contact-row {
@@ -34,27 +31,7 @@
     input[type],
     textarea,
     select {
-        transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        width: 90%;
-        margin: 0 5%;
-        padding: 1%;
-        background: $c-background-primary;
-        border: 1px solid $c-border-dark;
-        border-radius: $roundness-softsquare;
-        color: $c-font-primary;
-        @include f-body;
-        font-size: 1.1em;
-
-        &:hover {
-            @extend %styled-inputs;
-        }
-        &:focus {
-            @extend %styled-inputs;
-        }
+        @extend %styled-inputs;
     }
 
     textarea {
@@ -65,9 +42,7 @@
 }
 
 .contact-submit-row {
-    @include back-triangles;
-    border-radius: 0 0 $roundness-softsquare $roundness-softsquare;
-    border: 1px solid $c-border-light;
+    @extend %card-footer;
     padding: 10px;
     text-align: center;
 }
