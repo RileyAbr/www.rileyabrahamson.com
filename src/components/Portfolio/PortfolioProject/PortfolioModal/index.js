@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import './styles.scss'
 
-
-
 export default class PortfolioModal extends React.Component {
     // Closes the modal when called
     // Implemented on the background wrapper as well as the "X" button in the modal
@@ -24,23 +22,23 @@ export default class PortfolioModal extends React.Component {
             return null;
         }
         return (
-            <div>
+            <div className="portfolio-popup">
                 <div className="portfolio-modal-backdrop"></div>
 
                 <div className="portfolio-modal-wrapper"
                     onClick={e => {
                         this.onClose(e);
                     }}>
-                    <div class="portfolio-modal"
+                    <div className="portfolio-modal"
                         onClick={e => {
                             this.stopBubbleUp(e);
                         }}>
-                        <div class="portfolio-modal-header">
-                            <h2 class="portfolio-modal-title">
+                        <div className="portfolio-modal-header">
+                            <h2 className="portfolio-modal-title">
                                 {this.props.title}
                             </h2>
                             <button type="button"
-                                class="portfolio-modal-close " aria-label="Close">
+                                className="portfolio-modal-close " aria-label="Close">
                                 <span aria-hidden="true" onClick={e => {
                                     this.onClose(e);
                                 }}>
@@ -49,31 +47,31 @@ export default class PortfolioModal extends React.Component {
                             </button>
                         </div>
 
-                        <div class="portfolio-modal-body">
-                            <p class="portfolio-modal-desc">
+                        <div className="portfolio-modal-body">
+                            <p className="portfolio-modal-desc">
                                 {this.props.children}
                             </p>
 
                             {/* Conditional check for whether media in the modal is an image or not */}
                             {this.props.modalMediaIsImage &&
-                                <img class="portfolio-modal-media"
+                                <img className="portfolio-modal-media"
                                     src={this.props.modalMediaPath}
                                     alt=""></img>
                             }
                             {!this.props.modalMediaIsImage &&
-                                <video class="portfolio-modal-media"
+                                <video className="portfolio-modal-media"
                                     src={this.props.modalMediaPath} controls muted></video>
                             }
 
-                            <p class="portfolio-modal-tech">
+                            <p className="portfolio-modal-tech">
                                 Technologies used: {this.props.techUsed}
                             </p>
                         </div>
 
-                        <div class="portfolio-modal-footer">
+                        <div className="portfolio-modal-footer">
                             {/* Only renders the external link if one exists */}
                             {this.props.hasExternalLink &&
-                                <a class="portfolio-modal-btn"
+                                <a className="portfolio-modal-btn"
                                     href={this.props.externalLink}
                                     target="_blank" rel="noopener noreferrer">
                                     Link to Project
@@ -81,7 +79,7 @@ export default class PortfolioModal extends React.Component {
                             }
                             {/* Only renders the repo link if it exists */}
                             {this.props.hasRepo &&
-                                <a class="portfolio-modal-btn"
+                                <a className="portfolio-modal-btn"
                                     href={this.props.repoLink}
                                     target="_blank" rel="noopener noreferrer">
                                     Link to GitHub Repo

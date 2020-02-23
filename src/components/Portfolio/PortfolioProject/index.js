@@ -20,7 +20,7 @@ class PortfolioProject extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="portfolio-project">
                 <div className="overlay-container">
                     <img className="overlay-image align-middle"
                         //src={this.props.mediaPath} 

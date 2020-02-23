@@ -5,7 +5,7 @@ import './styles.scss';
 function Contact() {
     return (
         <div className="page-content">
-            <form id="contact-form">
+            <form method="get" id="contact-form">
 
                 <h2 id="contact-title">Need Something More Direct?</h2>
 
