@@ -3,10 +3,21 @@ import PropTypes from 'prop-types';
 
 import './styles.scss'
 
+
+
 export default class PortfolioModal extends React.Component {
+    // Closes the modal when called
+    // Implemented on the background wrapper as well as the "X" button in the modal
     onClose = e => {
         this.props.onClose && this.props.onClose(e);
     };
+
+    // This function prevents child element actions from bubbling up to their parents
+    stopBubbleUp = e => {
+        e.persist();
+        e.nativeEvent.stopImmediatePropagation();
+        e.stopPropagation();
+    }
 
     render() {
         if (!this.props.show) {
@@ -14,19 +25,22 @@ export default class PortfolioModal extends React.Component {
         }
         return (
             <div>
-                <div className="portfolio-modal-backdrop"
-                ></div>
+                <div className="portfolio-modal-backdrop"></div>
 
                 <div className="portfolio-modal-wrapper"
                     onClick={e => {
                         this.onClose(e);
                     }}>
-                    <div class="portfolio-modal">
+                    <div class="portfolio-modal"
+                        onClick={e => {
+                            this.stopBubbleUp(e);
+                        }}>
                         <div class="portfolio-modal-header">
-                            <h4 class="portfolio-modal-title">
+                            <h2 class="portfolio-modal-title">
                                 {this.props.title}
-                            </h4>
-                            <button type="button" class="modal-close close" aria-label="Close">
+                            </h2>
+                            <button type="button"
+                                class="portfolio-modal-close " aria-label="Close">
                                 <span aria-hidden="true" onClick={e => {
                                     this.onClose(e);
                                 }}>
@@ -36,7 +50,10 @@ export default class PortfolioModal extends React.Component {
                         </div>
 
                         <div class="portfolio-modal-body">
-                            <p class="modal-desc">{this.props.children}</p>
+                            <p class="portfolio-modal-desc">
+                                {this.props.children}
+                            </p>
+
                             {/* Conditional check for whether media in the modal is an image or not */}
                             {this.props.modalMediaIsImage &&
                                 <img class="portfolio-modal-preview-image"
@@ -47,6 +64,7 @@ export default class PortfolioModal extends React.Component {
                                 <video class="portfolio-modal-preview-clip"
                                     src={this.props.modalMediaPath} controls muted></video>
                             }
+
                             <p class="portfolio-modal-tech">
                                 Technologies used: {this.props.techUsed}
                             </p>
