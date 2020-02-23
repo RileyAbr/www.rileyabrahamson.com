@@ -37,8 +37,16 @@ export default class PortfolioModal extends React.Component {
 
                         <div class="portfolio-modal-body">
                             <p class="modal-desc">{this.props.children}</p>
-                            <img class="portfolio-modal-preview-image" src={this.props.modalMediaPath} alt=""></img>
-                            {/* <video class="portfolio-modal-preview-clip" src={""} controls muted></video> */}
+                            {/* Conditional check for whether media in the modal is an image or not */}
+                            {this.props.modalMediaIsImage &&
+                                <img class="portfolio-modal-preview-image"
+                                    src={this.props.modalMediaPath}
+                                    alt=""></img>
+                            }
+                            {!this.props.modalMediaIsImage &&
+                                <video class="portfolio-modal-preview-clip"
+                                    src={this.props.modalMediaPath} controls muted></video>
+                            }
                             <p class="portfolio-modal-tech">
                                 Technologies used: {this.props.techUsed}
                             </p>
