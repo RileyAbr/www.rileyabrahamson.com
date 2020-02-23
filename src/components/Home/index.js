@@ -35,7 +35,6 @@ const faces = [
 ]
 
 function HomeNavButton(props) {
-
     return (
         <div className="home-nav-wrapper">
             <NavLink className="home-nav-button"
