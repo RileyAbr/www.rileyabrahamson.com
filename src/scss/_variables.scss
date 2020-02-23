@@ -120,10 +120,12 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
 }
 
 %card-body {
+    padding: 1rem;
     background-color: $c-background-primary;
     border-inline-start: 1px solid $c-border-light;
     border-inline-end: 1px solid $c-border-light;
-    padding: 1rem;
+    @include f-body;
+    color: $c-font-primary;
 }
 
 %card-footer {

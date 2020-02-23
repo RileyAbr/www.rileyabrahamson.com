@@ -46,7 +46,7 @@ function Contact() {
                 </fieldset>
 
                 <div class='contact-submit-row'>
-                    <button class="contact-submit-button" type="submit">Send it!</button>
+                    <button class="contact-submit-button" type="submit" disabled>Currently Unavailable</button>
                 </div>
             </form>
         </div>
