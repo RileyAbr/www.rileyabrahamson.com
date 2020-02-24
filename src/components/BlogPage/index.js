@@ -5,8 +5,9 @@ import './styles.scss';
 class BlogPage extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{ padding: "200px 0" }}>
                 Test Post
+                {this.props.match.params[0]}
             </div>
         );
     }
