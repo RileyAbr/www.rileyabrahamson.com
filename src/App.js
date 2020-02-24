@@ -32,7 +32,8 @@ function App() {
                 <Route path="/about" component={About} />
                 <Route path="/resume" component={Resume} />
                 <Route path="/portfolio" component={Portfolio} />
-                <Route path="/blog" component={Blog} />
+                <Route exact path="/blog" component={Blog} />
+                <Route path="/blog/*" component={About} />
                 <Route path="/contact" component={Contact} />
             </main>
         </HashRouter>
