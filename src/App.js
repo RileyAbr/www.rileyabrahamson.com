@@ -16,6 +16,7 @@ import About from './components/About';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
+import BlogPage from './components/BlogPage';
 import Contact from './components/Contact';
 
 // RA Logo Import
@@ -33,7 +34,7 @@ function App() {
                 <Route path="/resume" component={Resume} />
                 <Route path="/portfolio" component={Portfolio} />
                 <Route exact path="/blog" component={Blog} />
-                <Route path="/blog/*" component={About} />
+                <Route path="/blog/*" component={BlogPage} />
                 <Route path="/contact" component={Contact} />
             </main>
         </HashRouter>
