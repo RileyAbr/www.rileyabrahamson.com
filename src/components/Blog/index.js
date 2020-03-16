@@ -5,7 +5,7 @@ import './styles.scss';
 import BlogPost from './BlogPost';
 import blogData from './blogs.json';
 
-let blogList = [...blogData].reverse().map((element) => {
+const blogList = [...blogData].reverse().map((element) => {
     return (
         <BlogPost
             urlTitle={element.urlTitle}
