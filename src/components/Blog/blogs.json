@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "urlTitle": "minimum-viable-gaming",
         "title": "\"Minimum Viable Gaming\"",
         "tagline": "and the Evolution of Early-Access",
@@ -9,7 +9,7 @@
         "mediaPath": "/assets/img/blog/minimum-viable-gaming/fallout4.jpg"
     },
     {
-        "id": 2,
+        "id": 1,
         "urlTitle": "the-monetization-of-gaming-moments",
         "title": "The Monetization of Gaming \"Moments\"",
         "tagline": "or why everyone is playing Fortnite",
@@ -18,7 +18,7 @@
         "mediaPath": "/assets/img/portfolio/moments.jpg"
     },
     {
-        "id": 3,
+        "id": 2,
         "urlTitle": "an-8-bit-argument-for-art",
         "title": "An 8-Bit Argument for Art",
         "tagline": "Video games can be more than just fun",
@@ -27,7 +27,7 @@
         "mediaPath": "/assets/img/blog/an-8-bit-argument-for-art/pixelart.jpg"
     },
     {
-        "id": 4,
+        "id": 3,
         "urlTitle": "what-the-golf-and-strokes-of-genius",
         "title": "WHAT THE GOLF? and Strokes of Genius",
         "tagline": "From golf pars to race cars and all in-between",
