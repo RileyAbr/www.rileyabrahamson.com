@@ -41,7 +41,7 @@ function Contact() {
 
                     <div class='contact-row'>
                         <label for='message'>Additional Details</label>
-                        <textarea id='input-message' name='message' placeholder="Any else?"></textarea>
+                        <textarea id='input-message' name='message' placeholder="Anything else?"></textarea>
                     </div>
                 </fieldset>
 
