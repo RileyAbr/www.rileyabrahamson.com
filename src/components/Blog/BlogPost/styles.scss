@@ -3,16 +3,18 @@
 .blog-post-wrapper {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 }
 
 .blog-post-thumbnail {
-    width: 250px;
-    height: 175px;
+    width: 275px;
+    height: 200px;
     margin: 10px 20px;
 }
 
 .blog-post-link {
     height: 100%;
+    margin-bottom: 2em;
 }
 
 .blog-post-title {

@@ -34,5 +34,14 @@
         "date": "January 5th, 2020",
         "abstract": "",
         "mediaPath": "/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-blog.jpg"
+    },
+    {
+        "id": 4,
+        "urlTitle": "testblog",
+        "title": "Lorem ipsum dolor sit",
+        "tagline": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam qui tempora",
+        "date": "January 5th, 2020",
+        "abstract": "",
+        "mediaPath": "/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-blog.jpg"
     }
 ]

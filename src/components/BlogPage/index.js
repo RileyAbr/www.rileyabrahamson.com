@@ -11,6 +11,7 @@ import blog1 from './blogs/the-monetization-of-gaming-moments.md';
 import blog2 from './blogs/an-8-bit-argument-for-art.md';
 import blog3 from './blogs/what-the-golf-and-strokes-of-genius.md';
 
+// This should stay in the same file for now
 const urlToBlog = {
     "minimum-viable-gaming": blog0,
     "the-monetization-of-gaming-moments": blog1,
