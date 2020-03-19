@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { useLocation } from "react-router-dom"
-import ReactMarkdown, { renderers } from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 
 import './styles.scss';
 

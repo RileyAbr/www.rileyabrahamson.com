@@ -2,21 +2,66 @@
 
 .blog-post-wrapper {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     align-items: center;
+
+    @media screen and (min-width: $size-phone) {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+    @media screen and (min-width: $size-desktop) {
+    }
+}
+
+.blog-post-thumbnail-link {
+    width: 400px;
+    height: 300px;
+    @media screen and (min-width: $size-phone) {
+        width: 300px;
+        height: 225px;
+    }
+    margin: 10px 20px;
 }
 
 .blog-post-thumbnail {
-    width: 275px;
-    height: 200px;
-    margin: 10px 20px;
+    @include border-shadow-soft;
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    @media screen and (min-width: $size-phone) {
+        width: 300px;
+        height: 225px;
+    }
 }
 
 .blog-post-link {
     height: 100%;
     margin-bottom: 2em;
+    padding: 5px 20px 0;
+
+    @media screen and (min-width: $size-phone) {
+        padding: 15px 0 0;
+    }
 }
 
 .blog-post-title {
     margin: 0;
+    font-size: 2rem;
+    @media screen and (min-width: $size-phone) {
+        font-size: 2.5rem;
+    }
+}
+
+.blog-post-tagline {
+    font-size: 1.1rem;
+    @media screen and (min-width: $size-phone) {
+        font-size: 1.2rem;
+    }
+}
+
+.blog-post-headings {
+    @media screen and (min-width: $size-phone) {
+        margin-right: 15px;
+    }
 }
