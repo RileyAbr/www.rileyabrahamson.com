@@ -1,0 +1,15 @@
+@import "../../scss/variables";
+
+.about-column {
+    @extend %content-column;
+}
+
+.about-title {
+    @include f-header;
+    font-size: $f-about-header-size;
+    margin: 1rem 0 0;
+}
+
+.about-bio {
+    font-size: $f-about-body-size;
+}
