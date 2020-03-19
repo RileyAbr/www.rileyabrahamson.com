@@ -1,4 +1,4 @@
-!["Riley holding an arrangement of video game screenshots"](/assets/img/blog/the-monetization-of-gaming-moments/moments.jpg "Riley holding an arrangement of video game screenshots")
+!["Riley holding an arrangement of video game screenshots"](blog_images/the-monetization-of-gaming-moments/moments.jpg "Riley holding an arrangement of video game screenshots")
 
 Gaming, like all other entertainment media, has gone through periods of design or clichés. Traditional art went through Impressionism to Post-Impressionism, Literature hit a streak of young adult dystopian fiction, and Film was “plagued” by an infection of Zombie-themed thrillers. However, modern gaming’s biggest trend isn’t in a specific visual or aesthetic but rather in a feeling, in a visceral endorphin rush that keeps players coming back for more: moments.
 

@@ -7,7 +7,7 @@ function Contact() {
         <div className="page-content">
             <form method="get" id="contact-form">
 
-                <h2 id="contact-title">Need Something More Direct?</h2>
+                <h1 id="contact-title">Need Something More Direct?</h1>
 
                 <fieldset class="contact-body">
                     <div class='contact-row'>

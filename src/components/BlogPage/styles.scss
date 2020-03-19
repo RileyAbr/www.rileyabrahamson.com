@@ -10,3 +10,10 @@
 .blog-page-column > p {
     margin-bottom: 0.5rem;
 }
+
+.blog-page-column > p > img {
+    @include border-shadow-soft;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
