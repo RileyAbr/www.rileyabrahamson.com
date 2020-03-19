@@ -185,6 +185,26 @@ $f-blog-body-size: 1.15rem;
     }
 }
 
+@mixin button-disabled {
+    background-color: $c-background-primary;
+    color: $c-font-primary;
+    border-color: $c-border-warning;
+    border-width: 2px;
+    border-style: dashed;
+    cursor: not-allowed;
+
+    &:focus {
+        outline: none;
+    }
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:hover {
+        background-color: $c-background-primary;
+    }
+}
+
 %styled-inputs {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
