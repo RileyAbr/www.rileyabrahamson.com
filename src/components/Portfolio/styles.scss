@@ -1,6 +1,7 @@
+@import "../../scss/_variables.scss";
+
 .portfolio-column {
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend %content-column;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

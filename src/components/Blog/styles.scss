@@ -1,6 +1,5 @@
 @import "../../scss/variables";
 
 .blogs-column {
-    max-width: 1200px;
-    margin: 0 auto;
+    @extend %content-column;
 }

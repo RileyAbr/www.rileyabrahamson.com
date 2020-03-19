@@ -21,9 +21,9 @@ const blogList = [...blogData].reverse().map((element) => {
 function Blog() {
     return (
         <div className="page-content">
-            <div className="blogs-column">
+            <article className="blogs-column">
                 {blogList}
-            </div>
+            </article>
         </div>
     );
 }

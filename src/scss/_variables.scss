@@ -16,6 +16,22 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
 
 /*
  
+ ##          ###    ##    ##  #######  ##     ## ######## 
+ ##         ## ##    ##  ##  ##     ## ##     ##    ##    
+ ##        ##   ##    ####   ##     ## ##     ##    ##    
+ ##       ##     ##    ##    ##     ## ##     ##    ##    
+ ##       #########    ##    ##     ## ##     ##    ##    
+ ##       ##     ##    ##    ##     ## ##     ##    ##    
+ ######## ##     ##    ##     #######   #######     ##    
+ 
+*/
+%content-column {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+ 
  ########  #######  ##    ## ########  ######  
  ##       ##     ## ###   ##    ##    ##    ## 
  ##       ##     ## ####  ##    ##    ##       
@@ -33,6 +49,8 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
 }
+
+$f-blog-body-size: 1.15rem;
 
 /*
  
@@ -198,6 +216,17 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
     }
 }
 
+/*
+ 
+ ##     ## ##     ## ##     ## ##     ## ##     ## 
+  ##   ##   ##   ##   ##   ##   ##   ##   ##   ##  
+   ## ##     ## ##     ## ##     ## ##     ## ##   
+    ###       ###       ###       ###       ###    
+   ## ##     ## ##     ## ##     ## ##     ## ##   
+  ##   ##   ##   ##   ##   ##   ##   ##   ##   ##  
+ ##     ## ##     ## ##     ## ##     ## ##     ## 
+ 
+*/
 //
 //
 // FORBIDDEN ZONE BELOW

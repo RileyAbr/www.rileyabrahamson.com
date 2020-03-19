@@ -4,7 +4,7 @@
 
 *You paid $60 for this?*
 
-#### Alpha-Beta-Early-Access
+# Alpha-Beta-Early-Access
 Shoddily crafted, survival/exploration games are nothing new to modern gamers. Ever since DayZ hit entertainment by storm in 2013, hundreds of bottom-barrel imitators and duplicators have been force-fed to shoppers and players everywhere. Steams introduction of Early Access titles in March of the same year has done nothing but enable poor products to reach consumers faster, with many other storefronts on consoles and PCs both followed suit. One can ask any gamer if they’ve made a regretful pre-purchase and nearly everyone would have a mistake that still plagues them (Mighty No. 9 still keeps me up at night).
 
 !["A chart showing stats on Steam early access titles. On Steam alone, they make up nearly 15% of all titles available for purchase. In a research study conducted by Queen's University, Canada in 2017, 1,182 games were studied to find trends in those that use early access. Only 34% were able to leave the early access stage. While many receive numerous updates in the early access phase, that rate is not kept up once they officially release."](/assets/img/blog/minimum-viable-gaming/steamstats.JPG "A chart showing stats on Steam early access titles. On Steam alone, they make up nearly 15% of all titles available for purchase. In a research study conducted by Queen's University, Canada in 2017, 1,182 games were studied to find trends in those that use early access. Only 34% were able to leave the early access stage. While many receive numerous updates in the early access phase, that rate is not kept up once they officially release.")
@@ -13,7 +13,7 @@ Indeed, Early Access titles seem to be a fantastic way to make cash for both AAA
 
 Enter: minimum viable product development.
 
-#### MVP, not PVP
+# MVP, not PVP
 If you aren’t from the tech background, minimum viable product development (MVP) may mean nothing to you. Coined by Frank Robinson of SyncDev in 2001, the premise of an MVP is simple: you create the lowest denominator product that creates a positive experience. Once it is received well, and your pocket is a bit heavier, you go back and reiterate again, improving it for new users.
 
 This might sound like what Early Access titles are, and the definition admittedly has plenty of overlap. MVP’s can slot nicely into the Early Access architecture offered by many marketplaces, but the distinction is in the execution. Early Access, as stated by Valve in their Steamworks documentation, is defined as: “Releasing a game in Early Access helps set context for prospective customers and provides them with information about your plans and goals before a ‘final’ release.” MVP’s on the other hand should have a completed project together that just fully satisfies the audience; think a perfect “5.5/10” game with an interesting premise or concept that would be fun with a second round of polish but doesn’t need it.
@@ -22,7 +22,7 @@ This might sound like what Early Access titles are, and the definition admittedl
 
 Perhaps the best way to illustrate how MVP development can be used in video game development is with concrete examples of it being done, both poorly and excellently. For the poor example, we will dive into the raging radioactive wasteland that is Fallout 76. As for the yang to 76’s yin, we will touch on the “Minecraft-clone” transformed to indie gem Terraria. Both titles help illustrate the pitfalls and benefits MVP development brings, as well as illustrate the overall trend to these types of releases. Grab your canvas bag, because this will get spicy.
 
-#### Seventy-Six Deadly Sins
+# Seventy-Six Deadly Sins
 Fallout 76 has had a… less than stellar launch. Once announced in June of 2018, it swept the Internet by storm in how exotic it was compared to previous titles developed by Todd and friends (multiplayer in a Bethesda game? What!?). However, as details emerged it became clear that 76 was going to be a more precarious investment for gamers. Details pried from the mouths of tight-lipped developers revealed that the title would take a step back from its series’ famed storytelling and character writing; instead YOU would be the characters!
 
 This premise worked well for 76, until the cracks started to seep through the scorched earth. The aging Creation Engine that game was built on struggled to deal with the added stress of multiplayer connectivity. Design elements of the title left players puzzling, as world felt empty without characters to interact with, the PVP system left more than a lot to be desired, and the entire game’s high-level content—launching Nukes—was conquered on the first day. But where Bethesda truly went wrong wasn’t in the game flaws, although much of the game design is damn confusing, but in the response to these issues and community criticisms.
@@ -33,7 +33,7 @@ These failures to control the experience and atmosphere around their product fai
 
 Never-the-less, this horror story shouldn’t serve to dissuade the usefulness of MVP’s, or the fact this practice will dominate the gaming scene to come. MVP’s are a natural evolution of utilizing Early Access to its greatest potential, both for cons and for legitimate development (after all, 76 did still sell 1.4 million digital copies by the end of 2018). What proper MVP usage can do for developers beyond sales, though, is trust.
 
-#### Building (and Rebuilding) a 2D Terrain
+# Building (and Rebuilding) a 2D Terrain
 Terraria is a title that many gamers would consider one of their best purchases, a title they would trust. Terraria originally released for only $10 on Steam in 2011. At the time it was remarked as a 2D rip-off of Minecraft, with the building and crafting elements linking the series. This didn’t stop its popularity though, as it passed 200,000 sales within 9 days and over 400,000 in a month’s time. Diligent developers Re-Logic stuck through with their product, as their fanbase grew on forums, Steam, Twitter, and Reddit. Developers interacted with fans directly, not through PR corporate accounts, which helped foster a sense of communication and rapport. Re-Logic capitalized on the hype of hitting nearly half a million sales and announced their plans for continuing the game and adding new features. They stated: "You've all helped build a great, huge community here dating back well before pre-release."
 
 Terraria took their outstanding reputation in stride, adding more and more major updates throughout time, inflating the amount of content and gameplay in the title astronomically. By the time Terraria hit version 1.3, it was a staple name in most gamer’s libraries and many more would pick it up each time it was on sale. Terraria has maintained support through 2018, with still more updates coming on the way. By now, Terraria is reported as having sold 27 million copies across all platforms they now support: PC, console, and mobile. Re-Logic has even been able to build on their success and community trust to put out two other titles, Pixel Piracy and Pixel Privateers.
@@ -42,5 +42,5 @@ This is the prime example of how an MVP can succeed in game development, and wha
 
 One last piece to note with MVP development is that it works wonders for small studios, but can be nearly too risky for large, established companies to do. Minimum viable products are usually done when there is not enough capital to establish a perfect product; large AAA developers like Bethesda should not be facing this issue. If they do decide to make the plunge into using MVP development as they Bethesda did with Fallout 76, they have to be able to deliver customer service and compassion that matches the reputation for perfection that customers expect from a Hollywood-tier entertainment titan.
 
-#### Does MVP = Most Valuable Player?
+# Does MVP = Most Valuable Player?
 Certain titles can pull themselves out MVP mediocrity Hell, like Final Fantasy XIV. Other’s fall, for they never quite delivered in the first place like DayZ the standalone game. And some continue to try and pull themselves together today, with relative success (No Man’s Sky has managed to fight its way back to being “Mixed” reviews on the Steam storefront). Whether Fallout 76 will manage to do the same remains up in the air, but for both Bethesda and any aspiring indie developer it is vital to understand what you are getting yourself into with minimum viable product development. After all, the entire reputation of West Virginia could be at stake. 

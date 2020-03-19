@@ -27,9 +27,9 @@ let projectList = [...projectData].reverse().map((element) => {
 function Portfolio() {
     return (
         <div className="page-content">
-            <div className="portfolio-column">
+            <article className="portfolio-column">
                 {projectList}
-            </div>
+            </article>
         </div>
     );
 }

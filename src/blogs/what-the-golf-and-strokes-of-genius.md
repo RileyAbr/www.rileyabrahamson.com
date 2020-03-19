@@ -1,6 +1,6 @@
 While playing through *WHAT THE GOLF?* via the Apple Arcade over the winter holiday, the game stuck out to me for being humerous, puzzling, and downright devious at times. While the game enticed me with the hilarious ragdolls and wacky things to putt, the clever pieces of design kept me playing even when I was frustrated. This is a list of some of those *strokes* of genius I noticed while playing *WHAT THE GOLF?* from the fabulous team at Triband.
 
-#### Rotato, rotato
+# Rotato, rotato
 In one of the earlier sections of the game full of disorienting space levels, you come upon a challenge to send a planet across a screen full of other cosmic clutter, but in only 2 hits.
 
 !["A screenshot of a space level focused around planets from WHAT THE GOLF?"](/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-space-1.jpg "A screenshot of a space level focused around planets from WHAT THE GOLF?")
@@ -13,7 +13,7 @@ After the first swing, the planet will begin hurtling across the top and bottom 
 
 !["The player attempting to launch a planet to the left in WHAT THE GOLF?"](/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-space-3.jpg "The player attempting to launch a planet to the left in WHAT THE GOLF?")
 
-#### Ninja Style
+# Ninja Style
 
 Another great example of how the game makes you feel as if you are thinking outside the box is in this simple platforming level:
 
@@ -27,7 +27,7 @@ So instead I just, uh, yeet’d myself off the wall on the side.
 
 *WHAT THE GOLF?* gives so much freedom in its simple expression of mechanics that players are really free to experiment and see how much they can break the game—whether some of these breaks were intended or not.
 
-#### Volley-bawl
+# Volley-bawl
 
 In this volleyball challenge level, you need to dodge explosive barrels kind of like an inverse of that absolutely barbaric challenge in *Super Mario Odyssey*.
 
@@ -39,7 +39,7 @@ You can dodge the barrels by literally standing next to the beach-goer throwing 
 
 !["The same volleyball court from before but the player is standing next to the person throwing explosive barrels."](/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-volley-2.jpg "The same volleyball court from before but the player is standing next to the person throwing explosive barrels.")
 
-#### Crab Save
+# Crab Save
 
 My favorite piece of level design in WHAT THE GOLF? (And the one that inspired me to create this list) is in a level I was stuck on for quite some time, where you have to ascend a sand tower as a crab in a limit amount of time.
 
@@ -55,7 +55,7 @@ However I noticed there was a small gap left of the start of the level, and it i
 
 !["The crab character successfully climbing the sand tower!"](/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-crab-4.jpg "The crab character successfully climbing the sand tower!")
 
-#### Show and (Please!) Tell
+# Show and (Please!) Tell
 If you still aren’t convinced in the foresight and understanding of their audience from the folks at Triband, they knew exactly what their biggest fans would want to show others in *WTG?*, the craziest levels straight out of the gate. So rather than relying on you finding those levels they put in a button JUST for that feature. 10/10 well played.
 
 !["The main menu for WHAT THE GOLF?, focusing on the Show to a Friend button"](/assets/img/blog/what-the-golf-and-strokes-of-genius/wtg-title.jpg "The main menu for WHAT THE GOLF?, focusing on the Show to a Friend button")

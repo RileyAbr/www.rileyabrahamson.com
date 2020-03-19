@@ -5,10 +5,10 @@ import './styles.scss';
 
 // All possible blogs
 // Note: this isn't the cleanest way to do it, but it does ensure that no extraneous blogs will ever be loaded
-import blog0 from './blogs/minimum-viable-gaming.md';
-import blog1 from './blogs/the-monetization-of-gaming-moments.md';
-import blog2 from './blogs/an-8-bit-argument-for-art.md';
-import blog3 from './blogs/what-the-golf-and-strokes-of-genius.md';
+import blog0 from '../../blogs/minimum-viable-gaming.md';
+import blog1 from '../../blogs/the-monetization-of-gaming-moments.md';
+import blog2 from '../../blogs/an-8-bit-argument-for-art.md';
+import blog3 from '../../blogs/what-the-golf-and-strokes-of-genius.md';
 
 // This should stay in the same file for now
 const urlToBlog = {
@@ -34,8 +34,10 @@ class BlogPage extends Component {
     render() {
         const { markdown } = this.state;
         return (
-            <div>
-                <ReactMarkdown source={markdown} />
+            <div className="page-content">
+                <article className="blog-page-column">
+                    <ReactMarkdown source={markdown} />
+                </article>
             </div>
         )
     }

@@ -1,0 +1,12 @@
+@import "../../scss/variables";
+
+.blog-page-column {
+    @extend %content-column;
+    padding: 0 10px;
+    font-size: $f-blog-body-size;
+}
+
+// because of how the markdown files are processed (with ReactMarkdown), it requires mainly relational, tag-level selectors
+.blog-page-column > p {
+    margin-bottom: 0.5rem;
+}
