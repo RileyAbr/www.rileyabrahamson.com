@@ -10,7 +10,7 @@ import github_logo from '../../img/social/github.png';
 import linkedin_logo from '../../img/social/linkedin.png';
 import twitter_logo from '../../img/social/twitter.png';
 
-// There is probably a cleaner way of doing this, but Webpack specifically is for staticlly choosing the files you want to use... so this solution will do for now :)
+// There is probably a cleaner way of doing this, but Webpack specifically is for staticly choosing the files you want to use... so this solution will do for now :)
 import face0 from '../../img/faces/face-0.png';
 import face1 from '../../img/faces/face-1.png';
 import face2 from '../../img/faces/face-2.png';
