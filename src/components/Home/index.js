@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
@@ -45,7 +45,7 @@ function HomeNavButton(props) {
     )
 }
 
-class Home extends React.Component {
+class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {

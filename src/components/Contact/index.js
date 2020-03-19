@@ -9,44 +9,48 @@ function Contact() {
 
                 <h1 id="contact-title">Need Something More Direct?</h1>
 
-                <fieldset class="contact-body">
-                    <div class='contact-row'>
-                        <label for='name'>Name</label>
+                <fieldset className="contact-body">
+                    <div className='contact-row'>
+                        <label>Name
                         <input id='input-name'
-                            name='name'
-                            type='text'
-                            placeholder="Your Name"
-                        />
+                                name='name'
+                                type='text'
+                                placeholder="Your Name"
+                            />
+                        </label>
                     </div>
 
-                    <div class='contact-row'>
-                        <label for='email'>Email</label>
+                    <div className='contact-row'>
+                        <label>Email
                         <input id='input-email'
-                            name='email'
-                            type='email'
-                            placeholder="name@website.com"
-                        />
+                                name='email'
+                                type='email'
+                                placeholder="name@website.com"
+                            />
+                        </label>
                     </div>
 
-                    <div class='contact-row'>
-                        <label for='reason'>Reason for Contact</label>
+                    <div className='contact-row'>
+                        <label>Reason for Contact
                         <select id='input-reason' name='reason'>
-                            <option value='employment'>Employment Inquiry</option>
-                            <option value='collab'>Project Collaboration</option>
-                            <option value='freelance'>Freelance Work</option>
-                            <option value='bug'>Bug Report</option>
-                            <option value='chat'>Just Chattin'</option>
-                        </select>
+                                <option value='employment'>Employment Inquiry</option>
+                                <option value='collab'>Project Collaboration</option>
+                                <option value='freelance'>Freelance Work</option>
+                                <option value='bug'>Bug Report</option>
+                                <option value='chat'>Just Chattin'</option>
+                            </select>
+                        </label>
                     </div>
 
-                    <div class='contact-row'>
-                        <label for='message'>Additional Details</label>
-                        <textarea id='input-message' name='message' placeholder="Anything else?"></textarea>
+                    <div className='contact-row'>
+                        <label>Additional Details
+                            <textarea id='input-message' name='message' placeholder="Anything else?"></textarea>
+                        </label>
                     </div>
                 </fieldset>
 
-                <div class='contact-submit-row'>
-                    <button class="contact-submit-button" type="submit" disabled>Currently Unavailable</button>
+                <div className='contact-submit-row'>
+                    <button className="contact-submit-button" type="submit" disabled>Currently Unavailable</button>
                 </div>
             </form>
         </div>

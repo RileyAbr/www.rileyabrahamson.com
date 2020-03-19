@@ -238,13 +238,13 @@ $f-blog-body-size: 1.15rem;
 
 /*
  
- ##     ## ##     ## ##     ## ##     ## ##     ## 
-  ##   ##   ##   ##   ##   ##   ##   ##   ##   ##  
-   ## ##     ## ##     ## ##     ## ##     ## ##   
-    ###       ###       ###       ###       ###    
-   ## ##     ## ##     ## ##     ## ##     ## ##   
-  ##   ##   ##   ##   ##   ##   ##   ##   ##   ##  
- ##     ## ##     ## ##     ## ##     ## ##     ## 
+ #### ##    ##         ########  ######## ##     ## #### ######## ##      ## 
+  ##  ###   ##         ##     ## ##       ##     ##  ##  ##       ##  ##  ## 
+  ##  ####  ##         ##     ## ##       ##     ##  ##  ##       ##  ##  ## 
+  ##  ## ## ## ####### ########  ######   ##     ##  ##  ######   ##  ##  ## 
+  ##  ##  ####         ##   ##   ##        ##   ##   ##  ##       ##  ##  ## 
+  ##  ##   ###         ##    ##  ##         ## ##    ##  ##       ##  ##  ## 
+ #### ##    ##         ##     ## ########    ###    #### ########  ###  ###  
  
 */
 //
@@ -252,54 +252,6 @@ $f-blog-body-size: 1.15rem;
 // FORBIDDEN ZONE BELOW
 //
 //
-
-@mixin divisionLine {
-    background: $fontColorBlack;
-    border-radius: 10px;
-}
-
-@mixin divisionLineHort {
-    @include divisionLine();
-    width: 4px;
-    height: auto;
-}
-@mixin divisionLineVert {
-    @include divisionLine();
-    width: auto;
-    height: 4px;
-}
-
-@mixin softBorders {
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-radius: 0.25rem;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
-@mixin hardBorders {
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-radius: 0.25rem;
-    border-color: rgba(0, 0, 0, 0.5);
-}
-
-@mixin lightShadowBorder {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-@mixin underlineLink {
-    color: $fontColorPurple;
-    text-decoration: underline;
-}
 
 //Hover transitions variables
 $cubeBezier: cubic-bezier(0.59, 0.17, 0.3, 0.75);
