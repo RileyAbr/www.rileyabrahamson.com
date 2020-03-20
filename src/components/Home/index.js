@@ -6,14 +6,14 @@ import './styles.scss';
 import HomeNavButton from "./HomeNavButton";
 
 // Home Nav Images
-import about from "../../img/homenav/about3.png";
-import resume from "../../img/homenav/resume3.png";
-import portfolio from "../../img/homenav/portfolio2.png"
-import blog from "../../img/homenav/blog2.png";
-import contact from "../../img/homenav/contact2.png";
+import about from "../../img/homenav/about5.png";
+import resume from "../../img/homenav/resume5.png";
+import portfolio from "../../img/homenav/portfolio3.png"
+import blog from "../../img/homenav/blog3.png";
+import contact from "../../img/homenav/contact3.png";
 import github_logo from '../../img/homenav/github.png';
-import linkedin_logo from '../../img/homenav/linkedin.png';
-import twitter_logo from '../../img/homenav/twitter.png';
+import linkedin_logo from '../../img/homenav/linkedin2.png';
+import twitter_logo from '../../img/homenav/twitter2.png';
 
 // There is probably a cleaner way of doing this, but Webpack specifically is for staticly choosing the files you want to use... so this solution will do for now :)
 import face0 from '../../img/faces/face-0.png';
@@ -56,14 +56,10 @@ class Home extends Component {
         )
     }
 
-    handleMouseEnter(i) {
-        this.setState({ faceNumber: i });
-    }
-
     render() {
         return (
             <div className="home-nav">
-                <div className="home-nav-grid">
+                <section className="home-nav-grid">
                     {/* First row */}
                     {this.renderHomeNavButton("about", about)}
                     {this.renderHomeNavButton("resume", resume)}
@@ -106,7 +102,7 @@ class Home extends Component {
                             <img className="home-nav-icon" src={twitter_logo} alt="Twitter's Logo"></img>
                         </a>
                     </div>
-                </div >
+                </section>
             </div>
         );
     }
