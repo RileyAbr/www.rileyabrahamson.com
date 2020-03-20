@@ -3,12 +3,17 @@ import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
-// import HomeNavButton from './HomeNavButton';
+import HomeNavButton from "./HomeNavButton";
 
-// Social Images
-import github_logo from '../../img/social/github.png';
-import linkedin_logo from '../../img/social/linkedin.png';
-import twitter_logo from '../../img/social/twitter.png';
+// Home Nav Images
+import about from "../../img/homenav/about3.png";
+import resume from "../../img/homenav/resume3.png";
+import portfolio from "../../img/homenav/portfolio2.png"
+import blog from "../../img/homenav/blog2.png";
+import contact from "../../img/homenav/contact2.png";
+import github_logo from '../../img/homenav/github.png';
+import linkedin_logo from '../../img/homenav/linkedin.png';
+import twitter_logo from '../../img/homenav/twitter.png';
 
 // There is probably a cleaner way of doing this, but Webpack specifically is for staticly choosing the files you want to use... so this solution will do for now :)
 import face0 from '../../img/faces/face-0.png';
@@ -34,17 +39,6 @@ const faces = [
     face8
 ]
 
-function HomeNavButton(props) {
-    return (
-        <div className="home-nav-wrapper">
-            <NavLink className="home-nav-button"
-                to={"/" + props.value}
-                onMouseOver={props.onMouseOver}
-            >{props.value}</NavLink>
-        </div>
-    )
-}
-
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -53,11 +47,12 @@ class Home extends Component {
         };
     }
 
-    renderHomeNavButton(toPage) {
+    renderHomeNavButton(linkToValue, imgSrcValue) {
         return (
             <HomeNavButton
-                value={toPage}
-            ></HomeNavButton>
+                linkTo={linkToValue}
+                imgSrc={imgSrcValue}>
+            </HomeNavButton>
         )
     }
 
@@ -70,18 +65,18 @@ class Home extends Component {
             <div className="home-nav">
                 <div className="home-nav-grid">
                     {/* First row */}
-                    {this.renderHomeNavButton("about")}
-                    {this.renderHomeNavButton("resume")}
-                    {this.renderHomeNavButton("portfolio")}
+                    {this.renderHomeNavButton("about", about)}
+                    {this.renderHomeNavButton("resume", resume)}
+                    {this.renderHomeNavButton("portfolio", portfolio)}
 
                     {/* Second Row */}
-                    {this.renderHomeNavButton("blog")}
+                    {this.renderHomeNavButton("blog", blog)}
                     <div className="home-nav-wrapper">
                         <div className="home-nav-button">
                             <img id="home-rileys-face" src={faces[this.state.faceNumber]} alt="An icon of riley's face"></img>
                         </div>
                     </div>
-                    {this.renderHomeNavButton("contact")}
+                    {this.renderHomeNavButton("contact", contact)}
 
                     {/* External Social Links! */}
                     <div className="home-nav-wrapper">

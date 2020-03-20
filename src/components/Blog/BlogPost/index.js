@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
-class BlogPost extends React.Component {
+class BlogPost extends Component {
     render() {
         return (
             <section className="blog-post-wrapper">
