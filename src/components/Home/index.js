@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -47,11 +46,12 @@ class Home extends Component {
         };
     }
 
-    renderHomeNavButton(linkToValue, imgSrcValue) {
+    renderHomeNavButton(linkToValue, imgSrcValue, altTextValue) {
         return (
             <HomeNavButton
                 linkTo={linkToValue}
-                imgSrc={imgSrcValue}>
+                imgSrc={imgSrcValue}
+                altText={altTextValue}>
             </HomeNavButton>
         )
     }
@@ -61,18 +61,19 @@ class Home extends Component {
             <div className="home-nav">
                 <section className="home-nav-grid">
                     {/* First row */}
-                    {this.renderHomeNavButton("about", about)}
-                    {this.renderHomeNavButton("resume", resume)}
-                    {this.renderHomeNavButton("portfolio", portfolio)}
+                    {this.renderHomeNavButton("about", about, "About")}
+                    {this.renderHomeNavButton("resume", resume, "Resume")}
+                    {this.renderHomeNavButton("portfolio", portfolio, "Portfolio")}
 
                     {/* Second Row */}
-                    {this.renderHomeNavButton("blog", blog)}
+                    {this.renderHomeNavButton("blog", blog, "Blog")}
                     <div className="home-nav-wrapper">
-                        <div className="home-nav-button">
-                            <img id="home-rileys-face" src={faces[this.state.faceNumber]} alt="An icon of riley's face"></img>
+                        <div className="home-nav-button home-riley-face-wrapper">
+                            <img id="home-riley-face" src={faces[this.state.faceNumber]} alt="An icon of riley's face"></img>
                         </div>
+                        <h1 aria-hidden="true" className="home-nav-title">&nbsp;</h1>
                     </div>
-                    {this.renderHomeNavButton("contact", contact)}
+                    {this.renderHomeNavButton("contact", contact, "Contact")}
 
                     {/* External Social Links! */}
                     <div className="home-nav-wrapper">
@@ -83,6 +84,7 @@ class Home extends Component {
                         >
                             <img className="home-nav-icon" src={github_logo} alt="GitHub's Logo"></img>
                         </a>
+                        <h1 className="home-nav-title">GitHub</h1>
                     </div>
                     <div className="home-nav-wrapper">
                         <a className="home-nav-button"
@@ -92,6 +94,7 @@ class Home extends Component {
                         >
                             <img className="home-nav-icon" src={linkedin_logo} alt="LinkedIn's Logo"></img>
                         </a>
+                        <h1 className="home-nav-title">LinkedIn</h1>
                     </div>
                     <div className="home-nav-wrapper">
                         <a className="home-nav-button"
@@ -101,6 +104,7 @@ class Home extends Component {
                         >
                             <img className="home-nav-icon" src={twitter_logo} alt="Twitter's Logo"></img>
                         </a>
+                        <h1 className="home-nav-title">Twitter</h1>
                     </div>
                 </section>
             </div>

@@ -30,6 +30,29 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
     margin: 0 auto;
 }
 
+// Home Navigation
+$home-grid-length: 600px;
+%home-grid-dimensions {
+    width: $home-grid-length / 1.6;
+    height: $home-grid-length / 1.6;
+
+    @media screen and (min-width: $size-phone) {
+        width: $home-grid-length;
+        height: $home-grid-length;
+    }
+}
+
+$home-nav-length: 130px;
+%home-nav-dimensions {
+    width: $home-nav-length / 1.6;
+    height: $home-nav-length / 1.6;
+
+    @media screen and (min-width: $size-phone) {
+        width: $home-nav-length;
+        height: $home-nav-length;
+    }
+}
+
 /*
  
  ########  #######  ##    ## ########  ######  
@@ -48,6 +71,15 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
 @mixin f-body {
     font-family: "Titillium Web", sans-serif;
     font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include f-header;
 }
 
 $f-about-header-size: 8rem;
@@ -127,6 +159,7 @@ $f-blog-body-size: 1.15rem;
     left: 0;
     z-index: 5;
     width: 100%;
+    max-width: 100vw;
     height: 100%;
     overflow: hidden;
     outline: 0;

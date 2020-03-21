@@ -18,9 +18,10 @@ class HomeNavButton extends Component {
                     <img
                         className="home-nav-icon"
                         src={this.props.imgSrc}
-                        alt={this.props.linkTo}
+                        alt={this.props.altText}
                     />
                 </NavLink>
+                <h1 className="home-nav-title">{this.props.altText}</h1>
             </div>
         )
     }
