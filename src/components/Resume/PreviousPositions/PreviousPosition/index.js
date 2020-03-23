@@ -2,13 +2,11 @@ import React from 'react';
 
 import "./styles.scss";
 
-function CurrentPosition(props) {
+function PreviousPosition(props) {
     return (
-        <div className="resume-position">
-            <h1 className="resume-position-title">{props.title}</h1>
-            <div aria-hidden='true' className="resume-postion-hr" />
+        <div className="resume-previous">
             <a
-                className="resume-position-link"
+                className="resume-previous-link"
                 href={props.imgLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -23,4 +21,4 @@ function CurrentPosition(props) {
     );
 }
 
-export default CurrentPosition;
+export default PreviousPosition;

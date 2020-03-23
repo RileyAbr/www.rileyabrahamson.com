@@ -1,0 +1,22 @@
+@import "../../../scss/variables";
+
+.resume-previous-positions {
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+
+.resume-previous-positions-title {
+    text-align: center;
+    font-size: $f-resume-previous-positions-header-size;
+}
+
+.resume-previous-postions-hr {
+    @extend %border-horizontal-solid;
+    margin: 6px 0;
+}
+
+.resume-previous-positions-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}

@@ -3,6 +3,7 @@ import React from 'react';
 import "./styles.scss";
 
 import CurrentPosition from './CurrentPosition';
+import PreviousPositions from './PreviousPositions';
 import SkillsGraph from './SkillsGraph';
 
 import currentPositions from './currentPositions.json';
@@ -17,7 +18,7 @@ const currentPositionsList = [...currentPositions].map((element) => {
             imgLink={element.imgLink}
         />
     )
-})
+});
 
 function Resume() {
     return (
@@ -31,9 +32,7 @@ function Resume() {
                 </div>
 
                 {/* Previous Work Positions */}
-                <div className="resume-previous-positions">
-                    <h2>I've Previously Worked At</h2>
-                </div>
+                <PreviousPositions />
 
                 {/* Skills Graph */}
                 <div className="resume-skills-graph">
