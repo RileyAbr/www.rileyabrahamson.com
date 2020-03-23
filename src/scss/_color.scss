@@ -20,3 +20,24 @@ $c-border-light: #dee2e6;
 $c-font-primary: $black;
 $c-font-secondary: $white;
 $c-font-purple: $purple;
+
+:export {
+    white: $white;
+    black: $black;
+    purple: $purple;
+    warningred: $warning-red;
+
+    cbackgroundprimary: $c-background-primary;
+    cbackgroundpurple: $c-background-purple;
+
+    cborderprimary: $c-border-primary;
+    cbordersecondary: $c-border-secondary;
+    cborderpurple: $c-border-purple;
+    cborderwarning: $c-border-warning;
+    cborderdark: $c-border-dark;
+    cborderlight: $c-border-light;
+
+    cfontprimary: $c-font-primary;
+    cfontsecondary: $c-font-secondary;
+    cfontpurple: $c-font-purple;
+}
