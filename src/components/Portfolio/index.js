@@ -8,6 +8,7 @@ import projectData from './projects.json';
 let projectList = [...projectData].reverse().map((element) => {
     return (
         <PortfolioProject
+            key={element.id}
             title={element.title}
             mediaPath={element.mediaPath}
             previewLine1={element.previewLine1}

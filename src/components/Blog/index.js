@@ -8,6 +8,7 @@ import blogData from './blogs.json';
 const blogList = [...blogData].reverse().map((element) => {
     return (
         <BlogPost
+            key={element.id}
             urlTitle={element.urlTitle}
             title={element.title}
             tagline={element.tagline}
