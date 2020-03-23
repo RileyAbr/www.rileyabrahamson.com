@@ -5,7 +5,7 @@ import './styles.scss';
 import PortfolioProject from './PortfolioProject';
 import projectData from './projects.json';
 
-let projectList = [...projectData].reverse().map((element) => {
+const projectList = [...projectData].reverse().map((element) => {
     return (
         <PortfolioProject
             key={element.id}
@@ -21,7 +21,7 @@ let projectList = [...projectData].reverse().map((element) => {
             externalLink={element.externalLink}
             hasRepo={element.hasRepo}
             repoLink={element.repoLink}
-        ></PortfolioProject>
+        />
     );
 })
 

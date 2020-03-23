@@ -1,3 +1,23 @@
 [
-    {}
+    {
+        "id": 0,
+        "title": "I'm Currently Studying At",
+        "imgSrc": "https://via.placeholder.com/450x300",
+        "altText": "Test",
+        "imgLink": "https://www.rileyabrahamson.com"
+    },
+    {
+        "id": 1,
+        "title": "I'm Currently Working At",
+        "imgSrc": "https://via.placeholder.com/450x300",
+        "altText": "Test",
+        "imgLink": "https://www.rileyabrahamson.com"
+    },
+    {
+        "id": 2,
+        "title": "And I'm Currently President Of",
+        "imgSrc": "https://via.placeholder.com/450x300",
+        "altText": "Test",
+        "imgLink": "https://www.rileyabrahamson.com"
+    }
 ]

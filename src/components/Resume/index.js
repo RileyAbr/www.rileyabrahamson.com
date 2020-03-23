@@ -1,9 +1,23 @@
 import React from 'react';
-import SkillsGraph from './SkillsGraph';
-
-import CurrentPosition from './CurrentPosition';
 
 import "./styles.scss";
+
+import CurrentPosition from './CurrentPosition';
+import SkillsGraph from './SkillsGraph';
+
+import currentPositions from './currentPositions.json';
+
+const currentPositionsList = [...currentPositions].map((element) => {
+    return (
+        <CurrentPosition
+            key={element.id}
+            title={element.title}
+            imgSrc={element.imgSrc}
+            altText={element.altText}
+            imgLink={element.imgLink}
+        />
+    )
+})
 
 function Resume() {
     return (
@@ -13,37 +27,7 @@ function Resume() {
 
                 {/* Positions Info */}
                 <div className="resume-positions-container">
-                    <CurrentPosition
-                        title={"I'm Currently Studying At"}
-                        imgSrc={"https://via.placeholder.com/450x300"}
-                        altText={"Test"}
-                        imgLink={"https://www.rileyabrahamson.com"}
-                    />
-                    <CurrentPosition
-                        title={"I'm Currently Studying At"}
-                        imgSrc={"https://via.placeholder.com/450x300"}
-                        altText={"Test"}
-                        imgLink={"https://www.rileyabrahamson.com"}
-                    />
-                    <CurrentPosition
-                        title={"I'm Currently Studying At"}
-                        imgSrc={"https://via.placeholder.com/450x300"}
-                        altText={"Test"}
-                        imgLink={"https://www.rileyabrahamson.com"}
-                    />
-                    {/* <div className="resume-position">
-                        I'm Currently Studying At
-                        <img className="resume-position-image" src="https://via.placeholder.com/450x300" />
-                    </div>
-                    <div className="resume-position">
-                        I'm Currently Working At
-                    </div>
-                    <div className="resume-position">
-                        I'm Currently President Of
-                    </div>
-                    <div className="resume-position">
-                        Other Places I've Worked
-                    </div> */}
+                    {currentPositionsList}
                 </div>
 
                 {/* Previous Work Positions */}

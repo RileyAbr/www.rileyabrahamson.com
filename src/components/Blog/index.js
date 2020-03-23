@@ -15,7 +15,7 @@ const blogList = [...blogData].reverse().map((element) => {
             date={element.date}
             abstract={element.abstract}
             mediaPath={element.mediaPath}
-        ></BlogPost>
+        />
     );
 })
 
