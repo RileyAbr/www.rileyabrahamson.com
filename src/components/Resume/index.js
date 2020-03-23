@@ -35,9 +35,9 @@ function Resume() {
                 <PreviousPositions />
 
                 {/* Skills Graph */}
-                <div className="resume-skills-graph">
+                {/* <div className="resume-skills-graph">
                     <SkillsGraph></SkillsGraph>
-                </div>
+                </div> */}
             </article>
         </div>
     );

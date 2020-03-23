@@ -20,7 +20,9 @@ const previousPositionsList = [...previousPositions].reverse().map((element) => 
 function PreviousPositions() {
     return (
         <div className="resume-previous-positions">
-            <h2 className="resume-previous-positions-title">I've Previously Worked At</h2>
+            <h2 className="resume-previous-positions-title">
+                Places I've Previously Worked
+            </h2>
             <div aria-hidden='true' className="resume-previous-postions-hr" />
             <div className="resume-previous-positions-wrapper">
                 {previousPositionsList}
