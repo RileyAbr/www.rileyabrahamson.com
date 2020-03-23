@@ -11,6 +11,11 @@
     margin-bottom: 0.5rem;
 }
 
+.blog-page-column > h1 {
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
 .blog-page-column > p > img {
     @include border-shadow-soft;
     display: block;

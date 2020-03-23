@@ -1,1 +1,14 @@
 @import "../../scss/variables";
+
+// Positions Info
+.resume-positions-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+// Skills Graph
+.resume-skills-graph {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 5px;
+}

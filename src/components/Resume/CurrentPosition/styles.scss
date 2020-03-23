@@ -1,0 +1,25 @@
+@import "../../../scss/variables";
+
+.resume-position {
+    display: flex;
+    flex-flow: column nowrap;
+
+    // Temp styles
+    // border: red 2px solid;
+}
+
+.resume-position-title {
+    text-align: center;
+    font-size: $f-resume-position-header-size;
+    display: inline-block;
+}
+
+.resume-postion-hr {
+    @extend %border-horizontal-solid;
+    margin: 6px 0;
+}
+
+.resume-position-image {
+    width: 450px;
+    height: 300px;
+}

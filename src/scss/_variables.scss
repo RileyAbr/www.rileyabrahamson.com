@@ -80,10 +80,13 @@ h4,
 h5,
 h6 {
     @include f-header;
+    margin: 0px;
 }
 
 $f-about-header-size: 8rem;
 $f-about-body-size: 2rem;
+
+$f-resume-position-header-size: 2.3rem;
 
 $f-blog-body-size: 1.15rem;
 
@@ -119,6 +122,14 @@ $f-blog-body-size: 1.15rem;
  ########   #######  ##     ## ########  ######## ##     ##  ######  
  
 */
+
+%border-horizontal-solid {
+    background: $c-border-primary;
+    border-radius: 10px;
+    width: auto;
+    height: 4px;
+}
+
 @mixin border-card {
     border-radius: $roundness-softsquare $roundness-softsquare $roundness-softsquare $roundness-softsquare;
 }
