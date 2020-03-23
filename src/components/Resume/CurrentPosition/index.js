@@ -8,6 +8,7 @@ function CurrentPosition(props) {
             <h1 className="resume-position-title">{props.title}</h1>
             <div className="resume-postion-hr"></div>
             <a
+                className="resume-position-link"
                 href={props.imgLink}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,9 +1,17 @@
 @import "../../scss/variables";
 
+.resume-column {
+    @extend %resume-column;
+}
+
 // Positions Info
 .resume-positions-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.resume-previous-positions {
 }
 
 // Skills Graph

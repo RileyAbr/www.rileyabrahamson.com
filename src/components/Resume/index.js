@@ -8,7 +8,7 @@ import "./styles.scss";
 function Resume() {
     return (
         <div className="page-content">
-            <section className="resume-column">
+            <article className="resume-column">
                 {/* JSON Resume Download */}
 
                 {/* Positions Info */}
@@ -46,11 +46,16 @@ function Resume() {
                     </div> */}
                 </div>
 
+                {/* Previous Work Positions */}
+                <div className="resume-previous-positions">
+                    <h2>I've Previously Worked At</h2>
+                </div>
+
                 {/* Skills Graph */}
                 <div className="resume-skills-graph">
                     <SkillsGraph></SkillsGraph>
                 </div>
-            </section>
+            </article>
         </div>
     );
 }

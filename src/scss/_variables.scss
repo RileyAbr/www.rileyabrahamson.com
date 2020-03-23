@@ -30,6 +30,11 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
     margin: 0 auto;
 }
 
+%resume-column {
+    @extend %content-column;
+    max-width: 1600px;
+}
+
 // Home Navigation
 $home-grid-length: 600px;
 %home-grid-dimensions {

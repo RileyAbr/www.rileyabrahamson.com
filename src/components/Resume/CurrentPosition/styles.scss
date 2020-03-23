@@ -3,9 +3,7 @@
 .resume-position {
     display: flex;
     flex-flow: column nowrap;
-
-    // Temp styles
-    // border: red 2px solid;
+    margin: 3px;
 }
 
 .resume-position-title {
@@ -19,7 +17,12 @@
     margin: 6px 0;
 }
 
+.resume-position-link {
+    display: block;
+    max-width: 450px;
+}
+
 .resume-position-image {
-    width: 450px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
