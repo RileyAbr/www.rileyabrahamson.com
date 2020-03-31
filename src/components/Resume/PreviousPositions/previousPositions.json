@@ -2,8 +2,8 @@
     {
         "id": 0,
         "title": "NDSU TLMC",
-        "imgSrc": "https://via.placeholder.com/200x133",
+        "imgSrc": "ndsutlmc.png",
         "altText": "Logo for NDSU Technology Learning & Media Center",
-        "imgLink": "www.rileyabrahamson.com"
+        "imgLink": "https://www.ndsu.edu/its/learning_and_applied_innovation/technology_learning_media_center_tlmc/"
     }
 ]

@@ -2,22 +2,22 @@
     {
         "id": 0,
         "title": "I'm Currently Studying At",
-        "imgSrc": "https://via.placeholder.com/450x300",
-        "altText": "Test",
-        "imgLink": "https://www.rileyabrahamson.com"
+        "imgSrc": "ndsu.png",
+        "altText": "Logo for North Dakota State University",
+        "imgLink": "https://bulletin.ndsu.edu/undergraduate/program-curriculum/computer-science/#majorbatext"
     },
     {
         "id": 1,
         "title": "I'm Currently Working At",
-        "imgSrc": "https://via.placeholder.com/450x300",
-        "altText": "Test",
-        "imgLink": "https://www.rileyabrahamson.com"
+        "imgSrc": "wex.png",
+        "altText": "Logo for WEX Inc., the parent company of WEX Health",
+        "imgLink": "https://www.wexinc.com/"
     },
     {
         "id": 2,
         "title": "And I'm Currently President Of",
-        "imgSrc": "https://via.placeholder.com/450x300",
-        "altText": "Test",
-        "imgLink": "https://www.rileyabrahamson.com"
+        "imgSrc": "lolclub.png",
+        "altText": "Logo for North Dakota State University's League of Legends Club",
+        "imgLink": "https://myndsu.ndsu.edu/organization/lolclub"
     }
 ]

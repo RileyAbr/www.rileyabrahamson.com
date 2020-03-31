@@ -15,7 +15,7 @@ function CurrentPosition(props) {
             >
                 <img
                     className="resume-position-image"
-                    src={props.imgSrc}
+                    src={process.env.PUBLIC_URL + "positions_images/" + props.imgSrc}
                     alt={props.altText}
                 />
             </a>

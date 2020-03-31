@@ -12,8 +12,8 @@ function PreviousPosition(props) {
                 rel="noopener noreferrer"
             >
                 <img
-                    className="resume-position-image"
-                    src={props.imgSrc}
+                    className="resume-previous-image"
+                    src={process.env.PUBLIC_URL + "positions_images/" + props.imgSrc}
                     alt={props.altText}
                 />
             </a>

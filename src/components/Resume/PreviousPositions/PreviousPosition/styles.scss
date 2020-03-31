@@ -1,0 +1,18 @@
+@import "../../../../scss/variables";
+
+.resume-previous-link {
+    display: block;
+    max-width: 200px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: $img-opacity-hover;
+    }
+}
+
+.resume-previous-image {
+    width: 100%;
+    height: auto;
+    padding: 0 2px;
+}

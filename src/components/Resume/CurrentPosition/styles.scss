@@ -20,6 +20,12 @@
 .resume-position-link {
     display: block;
     max-width: 450px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: $img-opacity-hover;
+    }
 }
 
 .resume-position-image {
