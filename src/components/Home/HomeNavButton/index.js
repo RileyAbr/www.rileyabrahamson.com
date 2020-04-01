@@ -6,21 +6,22 @@ import './styles.scss';
 class HomeNavButton extends Component {
     constructor(props) {
         super(props);
-        this.mouseEnter = this.mouseEnter.bind(this);
-        this.mouseLeave = this.mouseLeave.bind(this);
+        this.state = {
+            faceDirect: this.props.faceDirect
+        }
     }
 
-    mouseEnter(e) {
-        alert("Enter")
-    };
-
-    mouseLeave(e) {
-        alert("Leave")
-    };
+    sendDataToParent = () => {
+        this.props.parentCallback(this.state.faceDirect);
+    }
 
     render() {
         return (
-            <div className="home-nav-wrapper" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+            <div className="home-nav-wrapper"
+                // onMouseEnter={() => this.props.onMouseEnter}
+                // onMouseLeave={this.props.onMouseLeave}
+                onMouseEnter={this.sendDataToParent}
+            >
                 <NavLink className="home-nav-button"
                     to={"/" + this.props.linkTo}
                 >

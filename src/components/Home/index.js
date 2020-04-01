@@ -47,12 +47,26 @@ class Home extends Component {
         };
     }
 
-    renderHomeNavButton(linkToValue, imgSrcValue, altTextValue) {
+    mouseEnter(e) {
+        console.log("Enter " + this.props.altText);
+    };
+
+    mouseLeave(e) {
+        console.log("Leaving " + this.props.altText);
+    };
+
+    passToParent = (childValue) => {
+        this.setState({ faceNumber: childValue });
+    }
+
+    renderHomeNavButton(faceDirectValue, linkToValue, imgSrcValue, altTextValue) {
         return (
             <HomeNavButton
+                faceDirect={faceDirectValue}
                 linkTo={linkToValue}
                 imgSrc={imgSrcValue}
                 altText={altTextValue}
+                parentCallback={this.passToParent}
             />
         )
     }
@@ -72,19 +86,19 @@ class Home extends Component {
             <div className="home-nav">
                 <section className="home-nav-grid">
                     {/* First row */}
-                    {this.renderHomeNavButton("about", about, "About")}
-                    {this.renderHomeNavButton("resume", resume, "Resume")}
-                    {this.renderHomeNavButton("portfolio", portfolio, "Portfolio")}
+                    {this.renderHomeNavButton(0, "about", about, "About")}
+                    {this.renderHomeNavButton(1, "resume", resume, "Resume")}
+                    {this.renderHomeNavButton(2, "portfolio", portfolio, "Portfolio")}
 
                     {/* Second Row */}
-                    {this.renderHomeNavButton("blog", blog, "Blog")}
+                    {this.renderHomeNavButton(3, "blog", blog, "Blog")}
                     <div className="home-nav-wrapper">
                         <div className="home-nav-button home-riley-face-wrapper">
                             <img id="home-riley-face" src={faces[this.state.faceNumber]} alt="An icon of riley's face"></img>
                         </div>
                         <h1 aria-hidden="true" className="home-nav-title">&nbsp;</h1>
                     </div>
-                    {this.renderHomeNavButton("contact", contact, "Contact")}
+                    {this.renderHomeNavButton(5, "contact", contact, "Contact")}
 
                     {/* External Social Links! */}
                     {this.renderHomeSocialButton("https://github.com/RileyAbr", github_logo, "GitHub")}
