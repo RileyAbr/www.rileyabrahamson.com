@@ -6,14 +6,23 @@ import './styles.scss';
 class HomeNavButton extends Component {
     constructor(props) {
         super(props);
+        this.mouseEnter = this.mouseEnter.bind(this);
+        this.mouseLeave = this.mouseLeave.bind(this);
     }
+
+    mouseEnter(e) {
+        alert("Enter")
+    };
+
+    mouseLeave(e) {
+        alert("Leave")
+    };
 
     render() {
         return (
-            <div className="home-nav-wrapper">
+            <div className="home-nav-wrapper" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
                 <NavLink className="home-nav-button"
                     to={"/" + this.props.linkTo}
-                    onMouseOver={this.props.onMouseOver}
                 >
                     <img
                         className="home-nav-icon"

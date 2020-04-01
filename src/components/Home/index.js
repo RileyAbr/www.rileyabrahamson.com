@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './styles.scss';
 
 import HomeNavButton from "./HomeNavButton";
+import HomeSocialButton from "./HomeSocialButton";
 
 // Home Nav Images
 import about from "../../img/homenav/about5.png";
@@ -14,7 +15,7 @@ import github_logo from '../../img/homenav/github.png';
 import linkedin_logo from '../../img/homenav/linkedin2.png';
 import twitter_logo from '../../img/homenav/twitter2.png';
 
-// There is probably a cleaner way of doing this, but Webpack specifically is for staticly choosing the files you want to use... so this solution will do for now :)
+// There is probably a cleaner way of doing this, but Webpack specifically is for statically choosing the files you want to use... so this solution will do for now :)
 import face0 from '../../img/faces/face-0.png';
 import face1 from '../../img/faces/face-1.png';
 import face2 from '../../img/faces/face-2.png';
@@ -51,8 +52,18 @@ class Home extends Component {
             <HomeNavButton
                 linkTo={linkToValue}
                 imgSrc={imgSrcValue}
-                altText={altTextValue}>
-            </HomeNavButton>
+                altText={altTextValue}
+            />
+        )
+    }
+
+    renderHomeSocialButton(externalLinkValue, imgSrcValue, altTextValue) {
+        return (
+            <HomeSocialButton
+                externalLink={externalLinkValue}
+                imgSrc={imgSrcValue}
+                altText={altTextValue}
+            />
         )
     }
 
@@ -76,36 +87,9 @@ class Home extends Component {
                     {this.renderHomeNavButton("contact", contact, "Contact")}
 
                     {/* External Social Links! */}
-                    <div className="home-nav-wrapper">
-                        <a className="home-nav-button"
-                            href="https://github.com/RileyAbr"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img className="home-nav-icon" src={github_logo} alt="GitHub's Logo"></img>
-                        </a>
-                        <h1 className="home-nav-title">GitHub</h1>
-                    </div>
-                    <div className="home-nav-wrapper">
-                        <a className="home-nav-button"
-                            href="https://www.linkedin.com/in/rlyabr/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img className="home-nav-icon" src={linkedin_logo} alt="LinkedIn's Logo"></img>
-                        </a>
-                        <h1 className="home-nav-title">LinkedIn</h1>
-                    </div>
-                    <div className="home-nav-wrapper">
-                        <a className="home-nav-button"
-                            href="https://twitter.com/RileyAbrahamson"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img className="home-nav-icon" src={twitter_logo} alt="Twitter's Logo"></img>
-                        </a>
-                        <h1 className="home-nav-title">Twitter</h1>
-                    </div>
+                    {this.renderHomeSocialButton("https://github.com/RileyAbr", github_logo, "GitHub")}
+                    {this.renderHomeSocialButton("https://www.linkedin.com/in/rlyabr/", linkedin_logo, "LinkedIn")}
+                    {this.renderHomeSocialButton("https://twitter.com/RileyAbrahamson", twitter_logo, "Twitter")}
                 </section>
             </div>
         );
