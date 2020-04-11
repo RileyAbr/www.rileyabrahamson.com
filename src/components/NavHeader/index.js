@@ -11,7 +11,15 @@ class NavHeader extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { logoIsHome: true } // Defaults to a filled in logo
+        this.state = {
+            logoIsHome: true,
+            burgerCollapsed: true
+        } // Defaults to a filled in logo
+    }
+
+    // Flips the Hamburger menu open or closed
+    toggleHamburger = () => {
+        this.setState({ burgerCollapsed: !this.state.burgerCollapsed });
     }
 
     // Detects if the route changes. If the route changed, check if the page is the homepage and change the logo to selected or unselected
@@ -34,13 +42,21 @@ class NavHeader extends Component {
                     <span className="header-masthead">Riley Abrahamson</span>
                 </NavLink>
 
-                <nav>
-                    <ul>
-                        <li><NavLink to="/about">About</NavLink></li>
-                        <li><NavLink to="/resume">Resume</NavLink></li>
-                        <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                        <li><NavLink to="/blog">Blog</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
+                <button className="navburger-button" onClick={this.toggleHamburger}>
+                    <svg viewBox="0 0 30 30" width="30" height="30">
+                        <rect y="2" width="30" height="3" rx="3"></rect>
+                        <rect y="14" width="30" height="3" rx="3"></rect>
+                        <rect y="26" width="30" height="3" rx="3"></rect>
+                    </svg>
+                </button>
+
+                <nav className={this.state.burgerCollapsed ? "navburger" : "navburger navburger-visible"}>
+                    <ul className="navburger-links">
+                        <li><NavLink to="/about" onClick={this.toggleHamburger}>About</NavLink></li>
+                        <li><NavLink to="/resume" onClick={this.toggleHamburger}>Resume</NavLink></li>
+                        <li><NavLink to="/portfolio" onClick={this.toggleHamburger}>Portfolio</NavLink></li>
+                        <li><NavLink to="/blog" onClick={this.toggleHamburger}>Blog</NavLink></li>
+                        <li><NavLink to="/contact" onClick={this.toggleHamburger}>Contact</NavLink></li>
                     </ul>
                 </nav>
             </header>

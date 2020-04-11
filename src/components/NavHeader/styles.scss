@@ -6,10 +6,9 @@ header {
     width: 100%;
     padding: 6px 10px 3px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
 }
 
 .floating {
@@ -31,23 +30,64 @@ header {
 }
 
 .header-masthead {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 5px;
     color: $c-font-primary;
+
+    @media screen and (min-width: $size-phone) {
+        font-size: 2em;
+    }
 }
 
-// Navigation Buttons
-ul {
-    display: inline-block;
-    margin: 0 20px;
+// Navigation Styles
+.navburger {
+    height: 0;
+    overflow: hidden;
+    display: none;
+
+    @media screen and (min-width: $size-tablet) {
+        height: auto;
+        display: flex;
+    }
 }
 
-ul > li {
-    display: inline;
-    margin: 0 10px;
-    font-size: 1.5em;
+.navburger-visible {
+    height: max-content;
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    @media screen and (min-width: $size-tablet) {
+        flex-basis: auto;
+        flex-grow: 0;
+    }
+}
+
+.navburger-links > li {
+    margin: 2px 10px;
+    font-size: 1.5rem;
+
+    @media screen and (min-width: $size-tablet) {
+        display: inline-block;
+    }
 }
 
 .active {
     color: $c-font-purple;
+}
+
+.navburger-button {
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-color: rgba(0, 0, 0, 0.2);
+    transition: border-color 0.4s cubic-bezier(0.59, 0.17, 0.3, 0.75);
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+
+    @media screen and (min-width: $size-tablet) {
+        display: none;
+    }
 }
