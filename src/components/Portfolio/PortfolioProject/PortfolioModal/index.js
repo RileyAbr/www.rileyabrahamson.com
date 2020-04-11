@@ -29,10 +29,13 @@ export default class PortfolioModal extends React.Component {
                     onClick={e => {
                         this.onClose(e);
                     }}>
+
                     <div className="portfolio-modal"
                         onClick={e => {
                             this.stopBubbleUp(e);
                         }}>
+
+                        {/* Header */}
                         <div className="portfolio-modal-header">
                             <h2 className="portfolio-modal-title">
                                 {this.props.title}
@@ -47,6 +50,7 @@ export default class PortfolioModal extends React.Component {
                             </button>
                         </div>
 
+                        {/* Body */}
                         <div className="portfolio-modal-body">
                             <p className="portfolio-modal-desc">
                                 {this.props.children}
@@ -55,12 +59,13 @@ export default class PortfolioModal extends React.Component {
                             {/* Conditional check for whether media in the modal is an image or not */}
                             {this.props.modalMediaIsImage &&
                                 <img className="portfolio-modal-media"
-                                    src={this.props.modalMediaPath}
+                                    src={process.env.PUBLIC_URL + "portfolio_media/img/" + this.props.modalMediaPath}
                                     alt=""></img>
                             }
                             {!this.props.modalMediaIsImage &&
                                 <video className="portfolio-modal-media"
-                                    src={this.props.modalMediaPath} controls muted></video>
+                                    src={process.env.PUBLIC_URL + "portfolio_media/video/" + this.props.modalMediaPath} controls muted>
+                                </video>
                             }
 
                             <p className="portfolio-modal-tech">
@@ -68,6 +73,7 @@ export default class PortfolioModal extends React.Component {
                             </p>
                         </div>
 
+                        {/* Footer */}
                         <div className="portfolio-modal-footer">
                             {/* Only renders the external link if one exists */}
                             {this.props.hasExternalLink &&
