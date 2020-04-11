@@ -1,0 +1,20 @@
+@import "../../../scss/variables";
+
+.home-nav-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-nav-title {
+    margin: 2px 0 0;
+    @include f-header;
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    @media screen and (min-width: $size-phone) {
+        font-size: 1.6rem;
+        margin-top: 5px;
+    }
+}

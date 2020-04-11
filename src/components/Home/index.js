@@ -47,15 +47,7 @@ class Home extends Component {
         };
     }
 
-    mouseEnter(e) {
-        console.log("Enter " + this.props.altText);
-    };
-
-    mouseLeave(e) {
-        console.log("Leaving " + this.props.altText);
-    };
-
-    passToParent = (childValue) => {
+    passFaceBack = (childValue) => {
         this.setState({ faceNumber: childValue });
     }
 
@@ -66,7 +58,7 @@ class Home extends Component {
                 linkTo={linkToValue}
                 imgSrc={imgSrcValue}
                 altText={altTextValue}
-                parentCallback={this.passToParent}
+                parentCallback={this.passFaceBack}
             />
         )
     }
@@ -78,7 +70,7 @@ class Home extends Component {
                 externalLink={externalLinkValue}
                 imgSrc={imgSrcValue}
                 altText={altTextValue}
-                parentCallback={this.passToParent}
+                parentCallback={this.passFaceBack}
             />
         )
     }
