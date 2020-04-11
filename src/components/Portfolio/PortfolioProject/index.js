@@ -23,7 +23,7 @@ class PortfolioProject extends React.Component {
             <section className="portfolio-project">
                 <div className="overlay-container">
                     <img className="overlay-image align-middle"
-                        src={process.env.PUBLIC_URL + "portfolio_images/" + this.props.mediaPath} />
+                        src={process.env.PUBLIC_URL + "portfolio_thumbs/" + this.props.mediaPath} />
                     <div className="overlay-hover">
                         <div className="overlay-description" onClick={e => {
                             this.showModal(e);
