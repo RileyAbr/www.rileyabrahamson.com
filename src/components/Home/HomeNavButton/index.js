@@ -3,28 +3,22 @@ import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
 
+import HomeButton from "../HomeButton";
+
 class HomeNavButton extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            faceDirect: this.props.faceDirect
-        }
-    }
-
-    sendFaceToParent = () => {
-        this.props.parentCallback(this.state.faceDirect);
-    }
-
-    sendEmptyToParent = () => {
-        this.props.parentCallback(4);
     }
 
     render() {
         return (
-            <div className="home-nav-wrapper">
-                <NavLink className="home-nav-button"
-                    onMouseEnter={this.sendFaceToParent}
-                    // onMouseLeave={this.sendEmptyToParent}
+            <HomeButton
+                altText={this.props.altText}
+                parentCallback={this.props.parentCallback}
+                faceDirect={this.props.faceDirect}
+            >
+                <NavLink
+                    className="home-nav-button"
                     to={"/" + this.props.linkTo}
                 >
                     <img
@@ -33,8 +27,7 @@ class HomeNavButton extends Component {
                         alt={this.props.altText}
                     />
                 </NavLink>
-                <h1 className="home-nav-title">{this.props.altText}</h1>
-            </div>
+            </HomeButton>
         )
     }
 }

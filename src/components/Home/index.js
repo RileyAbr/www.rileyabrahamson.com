@@ -71,12 +71,14 @@ class Home extends Component {
         )
     }
 
-    renderHomeSocialButton(externalLinkValue, imgSrcValue, altTextValue) {
+    renderHomeSocialButton(faceDirectValue, externalLinkValue, imgSrcValue, altTextValue) {
         return (
             <HomeSocialButton
+                faceDirect={faceDirectValue}
                 externalLink={externalLinkValue}
                 imgSrc={imgSrcValue}
                 altText={altTextValue}
+                parentCallback={this.passToParent}
             />
         )
     }
@@ -101,9 +103,9 @@ class Home extends Component {
                     {this.renderHomeNavButton(5, "contact", contact, "Contact")}
 
                     {/* External Social Links! */}
-                    {this.renderHomeSocialButton("https://github.com/RileyAbr", github_logo, "GitHub")}
-                    {this.renderHomeSocialButton("https://www.linkedin.com/in/rlyabr/", linkedin_logo, "LinkedIn")}
-                    {this.renderHomeSocialButton("https://twitter.com/RileyAbrahamson", twitter_logo, "Twitter")}
+                    {this.renderHomeSocialButton(6, "https://github.com/RileyAbr", github_logo, "GitHub")}
+                    {this.renderHomeSocialButton(7, "https://www.linkedin.com/in/rlyabr/", linkedin_logo, "LinkedIn")}
+                    {this.renderHomeSocialButton(8, "https://twitter.com/RileyAbrahamson", twitter_logo, "Twitter")}
                 </section>
             </div>
         );

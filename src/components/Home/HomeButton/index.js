@@ -22,7 +22,10 @@ class HomeButton extends Component {
     render() {
         return (
             <div className="home-nav-wrapper">
-                <div>
+                <div
+                    onMouseEnter={this.sendFaceToParent}
+                    onMouseLeave={this.sendEmptyToParent}
+                >
                     {this.props.children}
                 </div>
                 <h1 className="home-nav-title">{this.props.altText}</h1>
