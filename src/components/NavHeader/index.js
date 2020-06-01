@@ -44,9 +44,9 @@ class NavHeader extends Component {
 
                 <button className="navburger-button" onClick={this.toggleHamburger}>
                     <svg viewBox="0 0 30 30" width="30" height="30">
-                        <rect y="2" width="30" height="3" rx="3"></rect>
-                        <rect y="14" width="30" height="3" rx="3"></rect>
-                        <rect y="26" width="30" height="3" rx="3"></rect>
+                        <rect y="3" width="30" height="3" rx="3"></rect>
+                        <rect y="13" width="30" height="3" rx="3"></rect>
+                        <rect y="24" width="30" height="3" rx="3"></rect>
                     </svg>
                 </button>
 
