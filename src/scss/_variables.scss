@@ -27,7 +27,7 @@ $size-xldesktop: 1200px; // Extra large screen / wide desktop
 */
 %content-column {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto 0;
 }
 
 %resume-column {
@@ -253,10 +253,10 @@ $img-opacity-hover: 0.73;
 
 @mixin button-disabled {
     background-color: $c-background-primary;
-    color: $c-font-primary;
+    color: $warning-red;
     border-color: $c-border-warning;
     border-width: 2px;
-    border-style: dashed;
+    border-style: solid;
     cursor: not-allowed;
 
     &:focus {

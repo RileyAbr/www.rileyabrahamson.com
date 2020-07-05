@@ -2,6 +2,7 @@
 
 .about-column {
     @extend %content-column;
+    padding: 0 5px;
 }
 
 .about-title {
