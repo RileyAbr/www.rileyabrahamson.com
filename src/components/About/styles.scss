@@ -14,3 +14,12 @@
 .about-bio {
     font-size: $f-about-body-size;
 }
+
+#about-a11y {
+    text-decoration: solid underline $c-font-primary;
+    &:hover {
+        color: $c-font-purple;
+        text-decoration-color: $c-border-purple;
+        cursor: help;
+    }
+}
