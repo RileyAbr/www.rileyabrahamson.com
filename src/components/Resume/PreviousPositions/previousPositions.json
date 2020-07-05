@@ -5,5 +5,12 @@
         "imgSrc": "ndsutlmc.png",
         "altText": "Logo for NDSU Technology Learning & Media Center",
         "imgLink": "https://www.ndsu.edu/its/learning_and_applied_innovation/technology_learning_media_center_tlmc/"
+    },
+    {
+        "id": 1,
+        "title": "WEX Health",
+        "imgSrc": "wex.png",
+        "altText": "Logo for WEX Inc., the parent company of WEX Health",
+        "imgLink": "https://www.wexinc.com/"
     }
 ]
