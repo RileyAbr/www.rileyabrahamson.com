@@ -29,8 +29,18 @@
             hidden
             aria-hidden="true"
         >
-            <input type="text" name="name" />
-            <input type="email" name="email" />
+            <input name="name" type="text" />
+
+            <input name="email" type="email" />
+
+            <select name="reason">
+                <option value="employment">Employment Inquiry</option>
+                <option value="collab">Project Collaboration</option>
+                <option value="freelance">Freelance Work</option>
+                <option value="bug">Bug Report</option>
+                <option value="chat">Just Chattin'</option>
+            </select>
+
             <textarea name="message"></textarea>
         </form>
 
