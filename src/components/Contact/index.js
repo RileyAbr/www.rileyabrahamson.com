@@ -11,6 +11,13 @@ function Contact() {
                 id="contact-form"
                 data-netlify="true"
             >
+                <input
+                    name="form-name"
+                    value="Netlify Rocks"
+                    type="hidden"
+                    aria-hidden="true"
+                />
+
                 <h1 id="contact-title">Need Something More Direct?</h1>
 
                 <fieldset className="contact-body">
