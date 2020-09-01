@@ -5,16 +5,11 @@ import "./styles.scss";
 function Contact() {
     return (
         <div className="page-content">
-            <form
-                method="POST"
-                name="contact"
-                id="contact-form"
-                data-netlify="true"
-            >
+            <form method="POST" name="contact" id="contact-form">
                 <input
-                    name="form-name"
-                    value="Netlify Rocks"
                     type="hidden"
+                    name="form-name"
+                    value="contact"
                     aria-hidden="true"
                 />
 
