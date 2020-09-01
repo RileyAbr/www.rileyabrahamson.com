@@ -12,5 +12,12 @@
         "imgSrc": "wex.png",
         "altText": "Logo for WEX Inc., the parent company of WEX Health",
         "imgLink": "https://www.wexinc.com/"
+    },
+    {
+        "id": 2,
+        "title": "Bushel",
+        "imgSrc": "bushel.png",
+        "altText": "Logo for Bushel, formerly Myriad Mobile",
+        "imgLink": "https://bushelpowered.com/"
     }
 ]
