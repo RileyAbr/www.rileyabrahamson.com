@@ -1,33 +1,43 @@
-import React from 'react';
+import React from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
-import PortfolioModal from './PortfolioModal';
+import PortfolioModal from "./PortfolioModal";
 
 class PortfolioProject extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            show: false
-        }
+            show: false,
+        };
     }
 
-    showModal = e => {
+    showModal = (e) => {
         this.setState({
-            show: !this.state.show
+            show: !this.state.show,
         });
-    }
+    };
 
     render() {
         return (
             <section className="portfolio-project">
                 <div className="overlay-container">
-                    <img className="overlay-image align-middle"
-                        src={process.env.PUBLIC_URL + "portfolio_thumbs/" + this.props.mediaPath} />
+                    <img
+                        className="overlay-image align-middle"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "portfolio_thumbs/" +
+                            this.props.mediaPath
+                        }
+                        alt={this.props.title}
+                    />
                     <div className="overlay-hover">
-                        <div className="overlay-description" onClick={e => {
-                            this.showModal(e);
-                        }}>
+                        <div
+                            className="overlay-description"
+                            onClick={(e) => {
+                                this.showModal(e);
+                            }}
+                        >
                             <p className="overlay-text">
                                 <strong>{this.props.title}</strong>
                                 <br></br>

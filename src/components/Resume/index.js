@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 import "./styles.scss";
 
-import CurrentPosition from './CurrentPosition';
-import PreviousPositions from './PreviousPositions';
-import SkillsGraph from './SkillsGraph';
+import CurrentPosition from "./CurrentPosition";
+import PreviousPositions from "./PreviousPositions";
+// import SkillsGraph from './SkillsGraph';
 
-import currentPositions from './currentPositions.json';
+import currentPositions from "./currentPositions.json";
 
 const currentPositionsList = [...currentPositions].map((element) => {
     return (
@@ -17,7 +17,7 @@ const currentPositionsList = [...currentPositions].map((element) => {
             altText={element.altText}
             imgLink={element.imgLink}
         />
-    )
+    );
 });
 
 function Resume() {

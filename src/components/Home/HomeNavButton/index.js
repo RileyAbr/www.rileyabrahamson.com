@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
-import './styles.scss';
+import "./styles.scss";
 
 import HomeButton from "../HomeButton";
 
 class HomeNavButton extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <HomeButton
@@ -28,7 +24,7 @@ class HomeNavButton extends Component {
                     />
                 </NavLink>
             </HomeButton>
-        )
+        );
     }
 }
 

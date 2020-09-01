@@ -26,7 +26,9 @@ function About() {
                 <p className="about-bio">
                     Lastly, I'm a huge ice cream snob and won't hesitate to let
                     you know my opinion on your sweet, frozen treat of choice.
-                    🍨
+                    <span role="img" aria-label="An ice cream sundae emoji">
+                        🍨
+                    </span>
                 </p>
             </section>
         </div>
