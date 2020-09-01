@@ -70,9 +70,7 @@ function Contact() {
                 </fieldset>
 
                 <div className="contact-submit-row">
-                    <button className="contact-submit-button" type="submit">
-                        Submit
-                    </button>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </div>
