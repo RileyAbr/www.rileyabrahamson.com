@@ -5,7 +5,7 @@ import "./styles.scss";
 function Contact() {
     return (
         <div className="page-content">
-            <form method="POST" name="contact" id="contact-form">
+            <form method="post" name="contact" id="contact-form" action="/">
                 <input
                     type="hidden"
                     name="form-name"
@@ -72,7 +72,9 @@ function Contact() {
                 </fieldset>
 
                 <div className="contact-submit-row">
-                    <button type="submit">Submit</button>
+                    <button className="contact-submit-button" type="submit">
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>
