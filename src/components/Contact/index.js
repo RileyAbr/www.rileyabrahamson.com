@@ -5,7 +5,7 @@ import "./styles.scss";
 function Contact() {
     return (
         <div className="page-content">
-            <form method="post" name="contact" id="contact-form" action="/">
+            <form method="post" name="contact" id="contact-form">
                 <input
                     type="hidden"
                     name="form-name"
