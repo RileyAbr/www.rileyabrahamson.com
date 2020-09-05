@@ -1,23 +1,20 @@
-import React, { Component } from 'react';
-import {
-    Route,
-    BrowserRouter
-} from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, BrowserRouter } from "react-router-dom";
 
 // Overarching Page Styles
-import './App.scss';
+import "./App.scss";
 
 // Navigation Bar
-import NavHeader from './components/NavHeader';
+import NavHeader from "./components/NavHeader";
 
 // 1st Level Pages on Site
-import Home from './components/Home';
-import About from './components/About';
-import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
-import Blog from './components/Blog';
-import BlogPage from './components/BlogPage';
-import Contact from './components/Contact';
+import Home from "./components/Home";
+import About from "./components/About";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Blog from "./components/Blog";
+import BlogPage from "./components/BlogPage";
+import Contact from "./components/Contact";
 
 class App extends Component {
     render() {
@@ -35,7 +32,7 @@ class App extends Component {
                     <Route path="/contact" component={Contact} />
                 </main>
             </BrowserRouter>
-        )
+        );
     }
 }
 

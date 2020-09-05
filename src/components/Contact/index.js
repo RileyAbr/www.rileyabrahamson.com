@@ -1,56 +1,80 @@
-import React from 'react';
+import React from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 function Contact() {
     return (
         <div className="page-content">
-            <form method="get" id="contact-form">
+            <form method="post" name="contact" id="contact-form">
+                <input
+                    type="hidden"
+                    name="form-name"
+                    value="contact"
+                    aria-hidden="true"
+                />
 
                 <h1 id="contact-title">Need Something More Direct?</h1>
 
                 <fieldset className="contact-body">
-                    <div className='contact-row'>
-                        <label>Name
-                        <input id='input-name'
-                                name='name'
-                                type='text'
+                    <div className="contact-row">
+                        <label>
+                            Name
+                            <input
+                                id="input-name"
+                                name="name"
+                                type="text"
                                 placeholder="Your Name"
                             />
                         </label>
                     </div>
 
-                    <div className='contact-row'>
-                        <label>Email
-                        <input id='input-email'
-                                name='email'
-                                type='email'
+                    <div className="contact-row">
+                        <label>
+                            Email
+                            <input
+                                id="input-email"
+                                name="email"
+                                type="email"
                                 placeholder="name@website.com"
                             />
                         </label>
                     </div>
 
-                    <div className='contact-row'>
-                        <label>Reason for Contact
-                        <select id='input-reason' name='reason'>
-                                <option value='employment'>Employment Inquiry</option>
-                                <option value='collab'>Project Collaboration</option>
-                                <option value='freelance'>Freelance Work</option>
-                                <option value='bug'>Bug Report</option>
-                                <option value='chat'>Just Chattin'</option>
+                    <div className="contact-row">
+                        <label>
+                            Reason for Contact
+                            <select id="input-reason" name="reason">
+                                <option value="employment">
+                                    Employment Inquiry
+                                </option>
+                                <option value="collab">
+                                    Project Collaboration
+                                </option>
+                                <option value="freelance">
+                                    Freelance Work
+                                </option>
+                                <option value="bug">Bug Report</option>
+                                <option value="chat">Just Chattin'</option>
                             </select>
                         </label>
                     </div>
 
-                    <div className='contact-row'>
-                        <label>Additional Details
-                            <textarea id='input-message' name='message' placeholder="Anything else?"></textarea>
+                    <div className="contact-row">
+                        <label>
+                            Additional Details
+                            <textarea
+                                id="input-message"
+                                name="message"
+                                placeholder="Anything else?"
+                            ></textarea>
                         </label>
                     </div>
                 </fieldset>
 
-                <div className='contact-submit-row'>
-                    <button className="contact-submit-button" type="submit" disabled>Currently Unavailable</button>
+                <div className="contact-submit-row">
+                    <button className="contact-submit-button" type="submit">
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>
