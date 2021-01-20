@@ -512,16 +512,16 @@
     {
         "id": 34,
         "title": "Rallee",
-        "mediaPath": "rallee.jpg",
+        "mediaPath": "rallee.png",
         "previewLine1": "",
         "previewLine2": "",
         "longDesc": "",
         "techUsed": "",
-        "modalMediaPath": "inhouse_modal.png",
+        "modalMediaPath": "rallee_modal.png",
         "modalMediaIsImage": true,
         "hasExternalLink": true,
-        "externalLink": "https://in-house-inator.netlify.app/",
+        "externalLink": "https://rallee.netlify.app/",
         "hasRepo": true,
-        "repoLink": "https://github.com/RileyAbr/In-house-inator"
+        "repoLink": "https://github.com/RileyAbr/Rallee-App-Front-End"
     }
 ]
