@@ -430,7 +430,7 @@
         "modalMediaPath": "newt_modal.jpg",
         "modalMediaIsImage": true,
         "hasExternalLink": true,
-        "externalLink": "https://project-newt-ed03b.web.app/",
+        "externalLink": "https://project-newt.netlify.app/",
         "hasRepo": true,
         "repoLink": "https://github.com/RileyAbr/N.-E.-W.-T."
     },
@@ -478,5 +478,50 @@
         "externalLink": "https://in-house-inator.netlify.app/",
         "hasRepo": true,
         "repoLink": "https://github.com/RileyAbr/In-house-inator"
+    },
+    {
+        "id": 32,
+        "title": "Packet-Sniffers 👃",
+        "mediaPath": "packet.jpg",
+        "previewLine1": "MAC Address Visualization",
+        "previewLine2": "IoT Ethics Research Project",
+        "longDesc": "Packet Sniffers was a university project researching the ethical issues behind cell phones and Bluetooth signals. In this experiment, a mock IoT network was designed to anonymously collect MAC addresses of nearby mobile devices (only from our consenting participants, of course!) via their beacon frame responses. From there, we performed analysis on frequency and distribution of the most common addresses—showing how a malicious actor could use the same IoT devices and data for evil. For this project, I served the role of front-end dev to build a simple visualizer to show off the data collected.",
+        "techUsed": "React, recharts, Laravel, JavaScript, PHP, Netlify",
+        "modalMediaPath": "packet_modal.jpg",
+        "modalMediaIsImage": true,
+        "hasExternalLink": true,
+        "externalLink": "https://packet-sniffers.netlify.app/",
+        "hasRepo": true,
+        "repoLink": "https://github.com/RileyAbr/Packet-Sniffers-Visualizer"
+    },
+    {
+        "id": 33,
+        "title": "Cooper's Puppy Club",
+        "mediaPath": "puppy.jpg",
+        "previewLine1": "Puppy Park Attendance",
+        "previewLine2": "Full Stack Mobile App",
+        "longDesc": "Cooper's Puppy Club is a mobile app designed to make using the dog park easier. With a simple one-tap check-in model, users can easily let others know when there is are puppies at the park. Within the app, the user can view parks in their area, see the dogs and owners at each park, and plan accordingly before making a trip across town for a play date. The project consist of a cross-platform mobile app created using React Native, relying heavily on React Native Elements for styling and functionality. The app routes all database calls through a custom Node Express API designed by myself, hosted via Heroku. While testing, I made heavily heavy use of emulation via Android Studio.",
+        "techUsed": "React Native, React Native Elements, Node, Express, JavaScript, MongoDB, Heroku, Android Studio",
+        "modalMediaPath": "puppy_modal.png",
+        "modalMediaIsImage": true,
+        "hasExternalLink": false,
+        "externalLink": "",
+        "hasRepo": true,
+        "repoLink": "https://github.com/RileyAbr/Coopers-Puppy-Club-Mobile-App"
+    },
+    {
+        "id": 34,
+        "title": "Rallee",
+        "mediaPath": "rallee.png",
+        "previewLine1": "Teammate Discovery Platform",
+        "previewLine2": "48-Hour Hackathon Project",
+        "longDesc": "Rallee is a web application developed for the Team Liquid's 2020 Liquid Hacks competition. It is a teammate-finding platform designed to connect players from all games, skill levels, and backgrounds. Within the team I served as the front-end lead; I created the core aesthetic, page layouts, and design direction. I was also able to act as a mentor on the basics of React for my teammates, helping them learn the fundamentals and tackle issue tickets from small SCSS improvments to full-fledged forms.",
+        "techUsed": "React, scss, Bootstrap, JavaScript, Spring, Java, Netlify",
+        "modalMediaPath": "rallee_modal.jpg",
+        "modalMediaIsImage": true,
+        "hasExternalLink": true,
+        "externalLink": "https://rallee.netlify.app/",
+        "hasRepo": true,
+        "repoLink": "https://github.com/RileyAbr/Rallee-App-Front-End"
     }
 ]
