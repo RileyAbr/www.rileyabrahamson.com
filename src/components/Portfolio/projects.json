@@ -523,5 +523,35 @@
         "externalLink": "https://rallee.netlify.app/",
         "hasRepo": true,
         "repoLink": "https://github.com/RileyAbr/Rallee-App-Front-End"
+    },
+    {
+        "id": 35,
+        "title": "GUMBO AGREE Statement Builder Plugin",
+        "mediaPath": "gumbo.png",
+        "previewLine1": "NDSU Computer Science Capstone",
+        "previewLine2": "Partnership with Adventium Labs",
+        "longDesc": "This Eclipse plugin simplifies the extension of AADL models with AGREE constraints through the use of an error-reducing UI. I served as the front end developer; this included the main Java plugin itself as well as the entirety of the React-based prototype. This project was created for NDSU's CSCI 445: Software Projects Capstone course.",
+        "techUsed": "Java, JavaScript, React, Eclipse IDE, AADL, AGREE, OSATE",
+        "modalMediaPath": "gumbo.png",
+        "modalMediaIsImage": true,
+        "hasExternalLink": true,
+        "externalLink": "https://csprojects.cs.ndsu.nodak.edu/capstone/projects/?project=2021_Adventium+Labs",
+        "hasRepo": true,
+        "repoLink": "https://github.com/RileyAbr/CSCI445-Adventium-Labs-GUMBO-Plugin-2021"
+    },
+    {
+        "id": 36,
+        "title": "Human Resourceful Security Simulation",
+        "mediaPath": "resourceful.jpg",
+        "previewLine1": "Security Gameification",
+        "previewLine2": "University Research Study",
+        "longDesc": "University research study into user behaviors for common social engineering tactics. This project consisted of both a contemporary data collection survey as well as gameified simulation of common workplace dangers. As lead developer and game designer, I took charge of the security skills skimulation \"Human Resourceful.\" Within the browser-based game, users play through an entire 8-hour work day in 3 minutes, dodging phishing and hacking attempts the entire time.",
+        "techUsed": "GameMaker Studio 2, JavaScript, HTML, CSS, Netlify, Qualtrics",
+        "modalMediaPath": "resourceful.jpg",
+        "modalMediaIsImage": true,
+        "hasExternalLink": true,
+        "externalLink": "https://social-engineering-simulation.netlify.app/",
+        "hasRepo": true,
+        "repoLink": "https://github.com/RileyAbr/CSCI-404-Human-Engineering"
     }
 ]
