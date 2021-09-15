@@ -1,23 +1,36 @@
-import React from 'react';
-
-import './styles.scss';
-
-import PortfolioProject from './PortfolioProject';
-import projectData from './projects.json';
-
-const projectList = [...projectData].reverse().map((element) => {
-    return (
-        <PortfolioProject
-            {...element}
-        />
-    );
-})
+import React, { useEffect, useState } from "react";
+import { getProjects } from "../../api/projects.api";
+import PortfolioProject from "./PortfolioProject";
+import "./styles.scss";
 
 function Portfolio() {
+    const [portfolioProjects, setPortfolioProjects] = useState();
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const loadProjects = async () => {
+        const data = await getProjects();
+
+        setPortfolioProjects(data);
+
+        setIsLoaded(true);
+    };
+
+    useEffect(() => {
+        if (!isLoaded) {
+            loadProjects();
+        }
+    }, [isLoaded]);
+
     return (
         <div className="page-content">
             <article className="portfolio-column">
-                {projectList}
+                {isLoaded ? (
+                    portfolioProjects.map((project) => (
+                        <PortfolioProject {...project} key={project.title} />
+                    ))
+                ) : (
+                    <div>Loading...</div>
+                )}
             </article>
         </div>
     );

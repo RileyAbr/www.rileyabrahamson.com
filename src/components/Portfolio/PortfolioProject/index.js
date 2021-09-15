@@ -1,71 +1,52 @@
-import React from "react";
-
+import React, { useState } from "react";
+import PortfolioModal from "./PortfolioModal";
 import "./styles.scss";
 
-import PortfolioModal from "./PortfolioModal";
+const PortfolioProject2 = ({ title, metadata }) => {
+    const [show, setShow] = useState(false);
 
-class PortfolioProject extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false,
-        };
-    }
-
-    showModal = (e) => {
-        this.setState({
-            show: !this.state.show,
-        });
+    const showModal = (e) => {
+        setShow(!show);
     };
 
-    render() {
-        return (
-            <section className="portfolio-project">
-                <div className="overlay-container">
-                    <img
-                        className="overlay-image align-middle"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "portfolio_thumbs/" +
-                            this.props.mediaPath
-                        }
-                        alt={this.props.title}
-                    />
-                    <div className="overlay-hover">
-                        <div
-                            className="overlay-description"
-                            onClick={(e) => {
-                                this.showModal(e);
-                            }}
-                        >
-                            <p className="overlay-text">
-                                <strong>{this.props.title}</strong>
-                                <br></br>
-                                {this.props.previewLine1}
-                                <br></br>
-                                {this.props.previewLine2}
-                            </p>
-                        </div>
+    return (
+        <section className="portfolio-project">
+            <div className="overlay-container">
+                <img
+                    className="overlay-image align-middle"
+                    src={metadata.thumbnail.url}
+                    alt={title}
+                />
+                <div className="overlay-hover">
+                    <div
+                        className="overlay-description"
+                        onClick={(e) => {
+                            showModal(e);
+                        }}
+                    >
+                        <p className="overlay-text">
+                            <strong>{title}</strong>
+                            <br></br>
+                            {metadata.teaser}
+                        </p>
                     </div>
                 </div>
+            </div>
 
-                <PortfolioModal
-                    onClose={this.showModal}
-                    show={this.state.show}
-                    title={this.props.title}
-                    techUsed={this.props.techUsed}
-                    modalMediaPath={this.props.modalMediaPath}
-                    modalMediaIsImage={this.props.modalMediaIsImage}
-                    hasExternalLink={this.props.hasExternalLink}
-                    externalLink={this.props.externalLink}
-                    hasRepo={this.props.hasRepo}
-                    repoLink={this.props.repoLink}
-                >
-                    {this.props.longDesc}
-                </PortfolioModal>
-            </section>
-        );
-    }
-}
+            <PortfolioModal
+                onClose={() => showModal()}
+                show={show}
+                title={title}
+                modalMediaType={metadata.modal_media_type}
+                modalMediaPath={metadata.modal_media.url}
+                techUsed={metadata.tech_used}
+                externalLink={metadata.external_link}
+                repoLink={metadata.source_link}
+            >
+                {metadata.description}
+            </PortfolioModal>
+        </section>
+    );
+};
 
-export default PortfolioProject;
+export default PortfolioProject2;
