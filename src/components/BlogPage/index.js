@@ -24,8 +24,6 @@ const BlogPage = () => {
         }
     }, [currentBlogUrlSlug, isLoaded]);
 
-    console.log(blogData);
-
     return (
         <div className="page-content">
             <article className="blog-page-column">
