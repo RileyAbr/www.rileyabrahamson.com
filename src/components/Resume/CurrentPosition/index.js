@@ -1,26 +1,25 @@
-import React from 'react';
-
+import React from "react";
 import "./styles.scss";
 
-function CurrentPosition(props) {
+const CurrentPosition = ({ title, metadata }) => {
     return (
         <div className="resume-position">
-            <h1 className="resume-position-title">{props.title}</h1>
-            <div aria-hidden='true' className="resume-postion-hr" />
+            <h1 className="resume-position-title">I'm Currently Working At</h1>
+            <div aria-hidden="true" className="resume-postion-hr" />
             <a
                 className="resume-position-link"
-                href={props.imgLink}
+                href={metadata.external_link}
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <img
                     className="resume-position-image"
-                    src={process.env.PUBLIC_URL + "positions_images/" + props.imgSrc}
-                    alt={props.altText}
+                    src={metadata.thumbnail.url}
+                    alt={metadata.alt_text}
                 />
             </a>
         </div>
     );
-}
+};
 
 export default CurrentPosition;
