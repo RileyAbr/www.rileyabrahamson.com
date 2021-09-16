@@ -1,32 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import { getBlogs } from "../../api/blogs.api";
+import BlogPost from "./BlogPost";
+import "./styles.scss";
 
-import './styles.scss';
+const Blog = () => {
+    const [blogsData, setBlogsData] = useState();
+    const [isLoaded, setIsLoaded] = useState(false);
 
-import BlogPost from './BlogPost';
-import blogData from './blogs.json';
+    const loadBlogs = async () => {
+        const data = await getBlogs();
 
-const blogList = [...blogData].reverse().map((element) => {
-    return (
-        <BlogPost
-            key={element.id}
-            urlTitle={element.urlTitle}
-            title={element.title}
-            tagline={element.tagline}
-            date={element.date}
-            abstract={element.abstract}
-            mediaPath={element.mediaPath}
-        />
-    );
-})
+        setBlogsData(data);
 
-function Blog() {
+        setIsLoaded(true);
+    };
+
+    useEffect(() => {
+        if (!isLoaded) {
+            loadBlogs();
+        }
+    }, [isLoaded]);
+
     return (
         <div className="page-content">
             <article className="blogs-column">
-                {blogList}
+                {isLoaded ? (
+                    blogsData.map((blog) => <BlogPost {...blog} />)
+                ) : (
+                    <div>Loading...</div>
+                )}
             </article>
         </div>
     );
-}
+};
 
 export default Blog;

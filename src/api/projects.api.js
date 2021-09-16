@@ -1,5 +1,4 @@
 import baseApiUrl from "./api";
-// require("dotenv").config();
 
 export const getProjects = async () => {
     const getProjectsUrl =
